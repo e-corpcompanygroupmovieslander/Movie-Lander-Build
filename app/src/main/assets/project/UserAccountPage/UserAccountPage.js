@@ -158,14 +158,13 @@ USERACCOUNTPAGE=()=>{
 
             STORE('','PremiumPath','PremiumPage');
 
-            MODULE('https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js',(CONNECTION)=>{CONNECTION()})
+            MODULE('../../Server/CONNECTION/Connection.js','CONNECTION',(CONNECTION)=>{CONNECTION()})
 
         })
 
         CLICKED('#Updates',()=>{
 
             WEBSITE(UPDATEAPI);
-            
         })
 
     })
