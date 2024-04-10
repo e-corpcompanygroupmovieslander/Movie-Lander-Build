@@ -1,0 +1,43 @@
+#DataDiv{
+    background: transparent;
+    top: 50px;
+    bottom: 0;
+    border-top: 1px solid #dcdcdc20;
+}
+
+.AppHeader{
+    background: transparent;
+}
+
+.BackIcon{
+    margin-left: 0.5rem;
+}
+
+.CatergoriesSections{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    font-size: 16px;
+}
+
+.CatergoriesMoviesHolder{
+    position: relative;
+    background: transparent;
+    display: inline-table;
+    width: 30%;
+    height: 28%;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;   
+}
+
+.Titles{
+    font-size: 16px;
+    margin-right: 0.5rem;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}

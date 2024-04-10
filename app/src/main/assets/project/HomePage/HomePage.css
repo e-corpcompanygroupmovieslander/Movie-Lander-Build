@@ -1,0 +1,15 @@
+.HomeFooter{
+    width: 95%;
+    left: 2%;
+    margin-bottom: 0.5rem;
+    border-radius: 50px;
+}
+
+.ScrollView{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#HomeLoader{
+    margin: 90% 45%;
+}

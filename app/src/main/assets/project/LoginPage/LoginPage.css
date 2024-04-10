@@ -1,0 +1,15 @@
+.AppLogo{
+    width: 30%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: 35%;
+    border-radius: 20px;
+}
+
+.Forgot{
+    text-align: right;
+    right: 4%;
+    font-size: 18px;
+}
+
