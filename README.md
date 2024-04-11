@@ -10,6 +10,8 @@
 
 # https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.css
 
+# ../Server/CONNECTION/Connection.css
+
 # https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/app/api.js
 
 # ../../Server/CONNECTION/Connection.js
