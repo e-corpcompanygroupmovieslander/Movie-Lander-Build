@@ -123,8 +123,14 @@ const MOVIESDETAILSPAGE=()=>{
 
                 ()=>WEBSITE(`https://drive.google.com/uc?export=download&id=${data.MovieSource}`),
             
-                ()=>PREMIUMPAGE()
+                ()=>CONDITION(data.Subscription && !localStorage.getItem('Premium') ,
 
+                    ()=>PREMIUMPAGE(),
+
+                    ()=>WEBSITE(`https://drive.google.com/uc?export=download&id=${data.MovieSource}`)
+                
+                )
+                    
             )
 
         })
