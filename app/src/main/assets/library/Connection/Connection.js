@@ -30,7 +30,6 @@ const APPSTART = () => {
 
     () => CONDITION(localStorage.getItem('AppLock'),
 
-
         () => CHECK(VERSIONSTATUS, (result) => {
 
             DISPLAY('',`
