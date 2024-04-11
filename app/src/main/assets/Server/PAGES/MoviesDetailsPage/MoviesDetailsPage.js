@@ -119,8 +119,14 @@ const MOVIESDETAILSPAGE=()=>{
 
             STORE('','PremiumPath','MoviePage');
 
-            PREMIUMPAGE();
-        
+            CONDITION(data.Subscription && localStorage.getItem('Premium') ,
+
+                ()=>WEBSITE(`https://drive.google.com/uc?export=download&id=${data.MovieSource}`),
+            
+                ()=>PREMIUMPAGE()
+
+            )
+
         })
 
         CLICKED('#SaveMovie', () => {
