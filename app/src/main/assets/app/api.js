@@ -80,7 +80,7 @@ const USDMONTHLY='20';
 const USDYEARLY='100';
 
 //APPVERSION
-const VERSIONSTATUS='Minor';
+const VERSIONSTATUS='';
 const APPVERSION='8.1';
 const UPDATEMESSAGE=`
 
