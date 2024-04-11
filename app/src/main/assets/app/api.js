@@ -80,8 +80,8 @@ const USDMONTHLY='20';
 const USDYEARLY='100';
 
 //APPVERSION
-const APPVERSION='8.2';
 const VERSIONSTATUS='Minor';
+const APPVERSION='8.1';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
@@ -102,3 +102,5 @@ const UPDATEMESSAGE=`
 
 //Online Updating
 const Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
+
+

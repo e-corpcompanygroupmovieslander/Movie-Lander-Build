@@ -18,6 +18,12 @@ USERSETTINGSACCOUNTPAGE=()=>{
 
     `)
 
+    CLICKED('#BackIcon',()=>{
+
+        EXTERNALJS('../project/UserAccountPage/UserAccountPage.js',()=>{USERACCOUNTPAGE()})
+
+    })
+
     STORE('','Updates','USERSETTINGSACCOUNTPAGEPREMIUM');
 
     MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})

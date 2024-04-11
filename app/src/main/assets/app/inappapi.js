@@ -1,3 +1,2 @@
-const CURRENTVERSION='8.1'
+const  CURRENTVERSION='8.1';
 
-ENVIRONMENT('');

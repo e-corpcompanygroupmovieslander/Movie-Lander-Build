@@ -2,21 +2,36 @@
 STORE('local','FrameWork','Advance-Native');
 STORE('local','FrameWorkVersion','0.0.1');
 STORE('local','Device','Android');
-STORE('local','AppVersion',CURRENTVERSION)
+STORE('local','AppVersion',CURRENTVERSION);
 APPMODE(localStorage.getItem('AppColour'),'','#121212');
 BODY();
-ZOOM()
+ZOOM();
+ENVIRONMENT('t');
+
+if (navigator.onLine) {
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.css';
+    document.head.appendChild(link);
+
+} else {
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '../Server/CONNECTION/Connection.css';
+    document.head.appendChild(link);
+
+}
+
+const APPSTART = () => {
+
+    CONDITION( VERSIONSTATUS === 'Minor' ,
+
+    () => CONDITION(localStorage.getItem('AppLock'),
 
 
-
-APPSTART=()=>{
-
-    CONDITION(VERSIONSTATUS === 'Minor',
-
-    ()=>CONDITION(localStorage.getItem('AppLock'),
-
-
-        ()=>CHECK(VERSIONSTATUS,(result)=>{
+        () => CHECK(VERSIONSTATUS, (result) => {
 
             DISPLAY('',`
 
@@ -32,51 +47,51 @@ APPSTART=()=>{
 
             STORE('','Updates','ForgotPinPage');
 
-            CLICKED('#ForgotPin',()=>{
+            CLICKED('#ForgotPin', () => {
 
-                MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()});
+                MODULE(`${Onlink}`,'CONNECTION',(CONNECTION) => { CONNECTION() });
     
-            })
+            });
 
             const PIN=document.querySelector('#Pin');
             
-            CLICKED('#Unlock',()=>{
+            CLICKED('#Unlock', () => {
 
                 CONDITION(!PIN.value,
 
-                    ()=>MESSAGE('Enter 5 Digit Pin'),
+                    () => MESSAGE('Enter 5 Digit Pin'),
 
-                    ()=>CONDITION(PIN.value === localStorage.getItem('AppLock'),
+                    () => CONDITION(PIN.value === localStorage.getItem('AppLock'),
 
-                        ()=>CONDITION(localStorage.getItem('User'),
+                        () => CONDITION(localStorage.getItem('User'),
 
-                            ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
+                            () => EXTERNALJS('../project/HomePage/HomePage.js', () => { HOMEPAGE() }),
                         
-                            ()=>EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()})
+                            () => EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
                         
                             ),
                         
-                        ()=>MESSAGE('Wrong AppLock Pin'),
+                        () => MESSAGE('Wrong AppLock Pin'),
                     
                     )
                 
-                )
+                );
 
-            })
+            });
 
         }),
 
-        ()=>CONDITION(localStorage.getItem('User'),
+        () => CONDITION(localStorage.getItem('User'),
 
-        ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
+        () => EXTERNALJS('../project/HomePage/HomePage.js', () => { HOMEPAGE() }),
     
-        ()=>EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()})
+        () => EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
     
         )
 
     ),
 
-    ()=>CHECK(APPVERSION,(result)=>{
+    () => CHECK(APPVERSION, (result) => {
 
         DISPLAY('',`
 
@@ -94,18 +109,16 @@ APPSTART=()=>{
             
             </button>
         
-        `)
+        `);
 
-        
-
-        CLICKED('#UpdateButton',()=>{
+        CLICKED('#UpdateButton', () => {
 
             WEBSITE(UPDATEAPI);
 
-        })
+        });
 
     })
 
-    )
+    );
 
-}
+};
