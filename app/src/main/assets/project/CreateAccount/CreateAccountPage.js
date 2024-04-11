@@ -12,7 +12,7 @@ CREATEACCOUNTPAGE=()=>{
 
         <input id='UserDate' type='text' placeholder='Enter Date Of Birth'/>
 
-        <input id='UserLocation' type='text' placeholder='Enter Location'/>
+        <input id='UserLocation' type='text' placeholder='Enter Location' readonly />
 
         <div class='NumberDisplay'>
 
@@ -25,6 +25,8 @@ CREATEACCOUNTPAGE=()=>{
         <button id='CreateUser'>Create Account</button>
 
         <button id='Login'>LogIn</button>
+
+        <div class='CountriesDiv'></div>
 
     `);
 

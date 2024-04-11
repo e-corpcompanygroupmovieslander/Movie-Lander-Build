@@ -10,6 +10,7 @@ import { FORGOTPINPAGE } from "../PAGES/ForgotPinPage/ForgotPinPage.js"
 import { HOMEPAGE } from "../PAGES/HomePage/HomePage.js"
 import { MOVIESDETAILSPAGE } from "../PAGES/MoviesDetailsPage/MoviesDetailsPage.js"
 import { AUTOPREMIUMUSER } from "../PAGES/PremiumAccountChecker/PremiumAccountChecker.js"
+import { USERSETTINGSACCOUNTPAGEPREMIUM } from "../PAGES/PremiumAccountPage/PremiumAccountPage.js"
 import { PREMIUMPAGE } from "../PAGES/PremiumPage/PremiumPage.js"
 import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
@@ -54,9 +55,13 @@ const CONNECTION=()=>{
         },
         "CreateAccountPageUserFunction":()=>{
             CREATEACCOUNTPAGEDATA();
+        },
+        "USERSETTINGSACCOUNTPAGEPREMIUM":()=>{
+            USERSETTINGSACCOUNTPAGEPREMIUM();
         }
     }
 
+    
     
     const DEFAULT=()=>{
 
