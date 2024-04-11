@@ -40,6 +40,6 @@ HOMEPAGE=()=>{
 
     STORE('','Updates','HomePage')
 
-    MODULE(Onlink,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }

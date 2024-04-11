@@ -158,7 +158,7 @@ USERACCOUNTPAGE=()=>{
 
             STORE('','PremiumPath','PremiumPage');
 
-            MODULE(Onlink,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
         })
 

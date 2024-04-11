@@ -1,4 +1,5 @@
 import { UGANDANPREMIUMPAGE } from "../UgandanPremiumPage/UgandanPremiumPage.js"
+import { USPREMIUMPAGE } from "../UsPremiumPage/UsPremiumPage.js"
 
 const PREMIUMPAGE=()=>{
 
@@ -8,7 +9,7 @@ const PREMIUMPAGE=()=>{
 
         ()=>UGANDANPREMIUMPAGE(),
 
-        ()=>alert('Not Ugandan')
+        ()=>USPREMIUMPAGE()
     
         )
 

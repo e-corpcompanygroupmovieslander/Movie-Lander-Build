@@ -42,7 +42,7 @@ USERSETTINGSACCOUNTPAGE=()=>{
 
                     <img class='myIcon' src='../library/Assets/icon/subscription.png'/>
                 
-                    <h1 id='SubPlan' class='MyData'></h1>
+                    <h1 id='ExSubPlan' class='MyData'>Null</h1>
 
                 </button>
 
@@ -91,6 +91,24 @@ USERSETTINGSACCOUNTPAGE=()=>{
             })
 
         })
+
+        DECLARATION('#ExSubPlan',(ELEMENT)=>{
+
+            DEJSON('local','PremiumUser',(data)=>{
+
+                CONDITION(data.ExpiryDate,
+    
+                    ()=>DISPLAY(ELEMENT,data.ExpiryDate),
+    
+                    ()=>DISPLAY(ELEMENT,'No SubScription')
+        
+                )
+    
+            })
+
+        })
+
+        
           
     })
 

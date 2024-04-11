@@ -48,8 +48,7 @@ CATERGORIESSELECTIONPAGE=()=>{
     
                             STORE('','MovieData',JSON.stringify(element));
     
-                            MODULE(Onlink,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-
+                            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
                         })
     
                         ADD(ELEMENT,MOVIESHOLDER);
