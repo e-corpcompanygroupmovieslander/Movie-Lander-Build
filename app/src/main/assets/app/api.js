@@ -101,4 +101,4 @@ const UPDATEMESSAGE=`
 `;
 
 //Online Updating
-const Onlink='../../Server/CONNECTION/Connection.js';
+const Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
