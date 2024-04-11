@@ -29,7 +29,7 @@ APPLOCKPAGE=()=>{
 
     DECLARATION('#DeleteAccountPolicy',(ELEMENT)=>{
 
-        GETPACKAGE(DELETEACCOUNTPOLICY,'cors',(data)=>{
+        GETPACKAGE(APPLOCKAPI,'cors',(data)=>{
 
             DISPLAY(ELEMENT,data);
 
