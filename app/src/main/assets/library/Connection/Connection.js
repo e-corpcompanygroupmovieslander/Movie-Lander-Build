@@ -6,7 +6,7 @@ STORE('local','AppVersion',CURRENTVERSION);
 APPMODE(localStorage.getItem('AppColour'),'','#121212');
 BODY();
 ZOOM();
-ENVIRONMENT('t');
+ENVIRONMENT('');
 
 if (navigator.onLine) {
 

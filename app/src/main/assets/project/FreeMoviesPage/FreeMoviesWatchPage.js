@@ -4,7 +4,7 @@ FREEMOVIESWATCHPAGE=()=>{
 
         DISPLAY('',`
 
-            <iframe src='${YOUTUBELINK+data.MoveTrailer}'/></iframe>
+            <iframe class='FreeWatchScreen' src='${YOUTUBELINK+data.MoveTrailer}'/></iframe>
 
             <header class='AppHeader'>
 
