@@ -1,5 +1,4 @@
 //SET FRAME WORK
-ENVIRONMENT('Test');
 STORE('local','FrameWork','Advance-Native');
 STORE('local','FrameWorkVersion','0.0.1');
 STORE('local','Device','Android');
