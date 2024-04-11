@@ -52,6 +52,8 @@ SETTINGSPAGE=()=>{
             
             </button>
 
+            <br><br>
+
             <button id='AppVersion' class='MyDataButton'>
 
                     <h1 class='mytitle'>App Version</h1>

@@ -64,6 +64,8 @@ ABOUTMEPAGE=()=>{
 
                 </button>
 
+                <br><br>
+
                 <button id='LogOut' class='Button'>
 
                     <h1 class='Buttontitle'>Log Out</h1>

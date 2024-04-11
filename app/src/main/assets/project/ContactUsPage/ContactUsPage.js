@@ -20,7 +20,7 @@ CONTACTUSPAGE=()=>{
 
             <h1 class='Buttontitle'>G-mail</h1>
 
-            <img class='ButtonIcon' src='../library/Assets/icon/Gmail.png'/>
+            <img class='ButtonIcon' src='../library/Assets/icon/gmail.png'/>
         
         </button>
 

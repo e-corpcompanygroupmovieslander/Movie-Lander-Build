@@ -3,11 +3,11 @@
 }
 
 .ProfileImage{
-    width: 50%;
-    height: 90%;
+    width: 40%;
+    height: auto;
     background: transparent;
     border-radius: 100px;
-    border: 1px solid #a52a2a30;
+    margin-top:0.5rem;
 }
 
 .About{
@@ -23,13 +23,14 @@
     position: absolute;
     font-size: 15px;
     bottom: 0;
-    border-top: 1px solid #a52a2a30;
+    border-top: 1px solid #a52a2a;
     margin-left: 0.5rem;
     padding: 1%;
 }
 
 .Button{
     display: inline-flex;
+    margin-top: 0.2rem;
 }
 
 .Buttontitle{

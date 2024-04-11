@@ -18,7 +18,7 @@ USERACCOUNTPAGE=()=>{
 
                 <div id='ProfileImageHolder' class='View'>
 
-                    <img class='ProfileImage' src='../library/Assets/images/movie lander logo.png'/>
+                    <img class='ProfileImage' src='../library/Assets/images/playstore.png'/>
                     
                     <button class='About'>About</button>
 
