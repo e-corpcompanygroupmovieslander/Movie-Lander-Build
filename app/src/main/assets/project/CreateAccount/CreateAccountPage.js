@@ -4,17 +4,23 @@ CREATEACCOUNTPAGE=()=>{
 
         <img class='AppLogo' src='../library/Assets/images/movie lander logo.png'/>
 
-        <input type='text' placeholder='Enter User Name'/>
+        <input id='UserName' type='text' placeholder='Enter User Name'/>
 
-        <input type='email' placeholder='Enter Email'/>
+        <input id='UserEmail' type='email' placeholder='Enter Email'/>
 
-        <input type='password' placeholder='Enter Password'/>
+        <input id='UserPassword' type='password' placeholder='Enter Password'/>
 
-        <input type='text' placeholder='Enter Date Of Birth'/>
+        <input id='UserDate' type='text' placeholder='Enter Date Of Birth'/>
 
-        <input type='text' placeholder='Enter Location'/>
+        <input id='UserLocation' type='text' placeholder='Enter Location'/>
 
-        <input type='tel' placeholder='Enter Telephone'/>
+        <div class='NumberDisplay'>
+
+            <h1 id='display' >+</h1>
+
+            <input id='UserTelephone' maxlength='12' type='tel' placeholder='Enter Telephone'/>
+        
+        </div>
 
         <button id='CreateUser'>Create Account</button>
 
@@ -28,12 +34,17 @@ CREATEACCOUNTPAGE=()=>{
 
     })
 
-    STORE('','Updates','CreateAccountPage');
-
+    
     CLICKED('#CreateUser',()=>{
+
+        STORE('','Updates','CreateAccountPage');
 
         MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
         
     })
+
+    STORE('','Updates','CreateAccountPageUserFunction');
+
+    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }

@@ -1,0 +1,26 @@
+#UserTelephone{
+width: 80%;
+margin-left: 1rem;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+}
+
+.NumberDisplay{
+    position: relative;
+    left: 2%;
+    font-size: 30px;
+    display: inline-flex;
+    width: 95%;
+    height: 45px;
+    background: transparent;
+}
+
+#display{
+    position: relative;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

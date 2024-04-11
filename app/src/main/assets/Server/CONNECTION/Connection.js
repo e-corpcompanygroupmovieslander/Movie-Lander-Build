@@ -1,6 +1,7 @@
 import { BUSINESSTOOL } from "../FUNCTIONS/BusinessTools/BusinessTools.js"
 import { COMMUNITY } from "../FUNCTIONS/Community/Community.js"
 import { CREATEUSER } from "../FUNCTIONS/CreateAccount/CreateAccount.js"
+import { CREATEACCOUNTPAGEDATA } from "../FUNCTIONS/CreateAccount/CreateAccountPage.js"
 import { LOGINUSER } from "../FUNCTIONS/Login/LoginUser.js"
 import { NOTIFICATIONS } from "../FUNCTIONS/Notifications/Notifications.js"
 import { AUTODELETEACCOUNT } from "../PAGES/AutoDeleteAccount/AutoDeleteAccount.js"
@@ -20,39 +21,43 @@ const CONNECTION=()=>{
 
     const CASES={
         "HomePage":()=>{
-            HOMEPAGE()
+            HOMEPAGE();
         },
         "PremiumPage":()=>{
-            PREMIUMPAGE()
+            PREMIUMPAGE();
         },
         "CatergoriesPage":()=>{
-            MOVIESDETAILSPAGE()
+            MOVIESDETAILSPAGE();
         },
         "NotificationsPage":()=>{
-            NOTIFICATIONS()
+            NOTIFICATIONS();
         },
         "CommunityPage":()=>{
-            COMMUNITY()
+            COMMUNITY();
         },
         "BussinessTools":()=>{
-            BUSINESSTOOL()
+            BUSINESSTOOL();
         },"LoginPage":()=>{
-            LOGINUSER()
+            LOGINUSER();
         },
         "CreateAccountPage":()=>{
-            CREATEUSER()
+            CREATEUSER();
         },
         "ForgotPasswordPage":()=>{
-            FORGOTPASSWORDPAGE()
+            FORGOTPASSWORDPAGE();
         },
         "ForgotPinPage":()=>{
-            FORGOTPINPAGE()
+            FORGOTPINPAGE();
         },
         "LibraryPage":()=>{
-            LIBRARY()
+            LIBRARY();
+        },
+        "CreateAccountPageUserFunction":()=>{
+            CREATEACCOUNTPAGEDATA();
         }
     }
 
+    
     const DEFAULT=()=>{
 
         EXTERNALJS('../library/Connection/Connection.js',()=>{APPSTART()})
