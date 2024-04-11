@@ -6,6 +6,7 @@
     overflow-y: hidden;
     overflow-x: auto;
     display: inline-flex;
+    background: transparent;
 }
 
 #AnimationsLoader{
