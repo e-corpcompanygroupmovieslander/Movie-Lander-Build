@@ -50,4 +50,8 @@ BUSINESSTOOLSPAGE=()=>{
 
     })
 
+    STORE('','Updates','BussinessTools')
+
+    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+
 }

@@ -1,8 +1,16 @@
+import { BUSINESSTOOL } from "../FUNCTIONS/BusinessTools/BusinessTools.js"
+import { COMMUNITY } from "../FUNCTIONS/Community/Community.js"
+import { CREATEUSER } from "../FUNCTIONS/CreateAccount/CreateAccount.js"
+import { LOGINUSER } from "../FUNCTIONS/Login/LoginUser.js"
+import { NOTIFICATIONS } from "../FUNCTIONS/Notifications/Notifications.js"
 import { AUTODELETEACCOUNT } from "../PAGES/AutoDeleteAccount/AutoDeleteAccount.js"
+import { FORGOTPASSWORDPAGE } from "../PAGES/ForgotPassword/ForgotPassword.js"
+import { FORGOTPINPAGE } from "../PAGES/ForgotPinPage/ForgotPinPage.js"
 import { HOMEPAGE } from "../PAGES/HomePage/HomePage.js"
 import { MOVIESDETAILSPAGE } from "../PAGES/MoviesDetailsPage/MoviesDetailsPage.js"
 import { AUTOPREMIUMUSER } from "../PAGES/PremiumAccountChecker/PremiumAccountChecker.js"
 import { PREMIUMPAGE } from "../PAGES/PremiumPage/PremiumPage.js"
+import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
 const CONNECTION=()=>{
 
@@ -19,6 +27,29 @@ const CONNECTION=()=>{
         },
         "CatergoriesPage":()=>{
             MOVIESDETAILSPAGE()
+        },
+        "NotificationsPage":()=>{
+            NOTIFICATIONS()
+        },
+        "CommunityPage":()=>{
+            COMMUNITY()
+        },
+        "BussinessTools":()=>{
+            BUSINESSTOOL()
+        },"LoginPage":()=>{
+            LOGINUSER()
+        },
+        "CreateAccountPage":()=>{
+            CREATEUSER()
+        },
+        "ForgotPasswordPage":()=>{
+            FORGOTPASSWORDPAGE()
+        },
+        "ForgotPinPage":()=>{
+            FORGOTPINPAGE()
+        },
+        "LibraryPage":()=>{
+            LIBRARY()
         }
     }
 

@@ -24,11 +24,19 @@ APPSTART=()=>{
 
                 <input id='Pin' maxlength='5' type='tel' placeholder='Enter Your Pin'/>
 
-                <h1 class='Forgot'>ForgotPin?</h1>
+                <h1 id='ForgotPin' class='Forgot'>ForgotPin?</h1>
 
                 <button id='Unlock'>Unlock</button>
         
             `);
+
+            STORE('','Updates','ForgotPinPage');
+
+            CLICKED('#ForgotPin',()=>{
+
+                MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()});
+    
+            })
 
             const PIN=document.querySelector('#Pin');
             
@@ -87,6 +95,8 @@ APPSTART=()=>{
             </button>
         
         `)
+
+        
 
         CLICKED('#UpdateButton',()=>{
 

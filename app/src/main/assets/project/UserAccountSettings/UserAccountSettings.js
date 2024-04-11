@@ -103,7 +103,7 @@ USERSETTINGSACCOUNTPAGE=()=>{
 
             CONDITION(localStorage.getItem('Premium') ,
     
-                ()=>STYLED(ELEMENT,'display','block'),
+                ()=>STYLED(ELEMENT,'display','inline-flex'),
     
                 ()=>STYLED(ELEMENT,'display','none')
         

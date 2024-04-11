@@ -10,7 +10,7 @@ LOGINPAGE=()=>{
 
         <input class='LoginPassword' type='password' placeholder='Enter Password'/>
 
-        <h1 class='Forgot'>ForgotPassword?</h1>
+        <h1  class='Forgot'>ForgotPassword?</h1>
 
         <button id='LoginUser'>LogIn</button>
 
@@ -18,15 +18,25 @@ LOGINPAGE=()=>{
     
     `);
 
-    CLICKED('#LoginUser',()=>{
-        
-        EXTERNALJS('../project/LoginPage/LoginUser.js',()=>{LOGINUSER()})
+    STORE('','Updates','LoginPage');
 
+    CLICKED('#LoginUser',()=>{
+
+        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+        
     })
 
     CLICKED('#CreateAccount',()=>{
         
         EXTERNALJS('../project/CreateAccount/CreateAccountPage.js',()=>{CREATEACCOUNTPAGE()})
+
+    })
+
+    CLICKED('.Forgot',()=>{
+
+        STORE('','Updates','ForgotPasswordPage');
+
+        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
     })
 

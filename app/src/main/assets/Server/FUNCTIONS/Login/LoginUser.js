@@ -1,4 +1,4 @@
-LOGINUSER=()=>{
+const LOGINUSER=()=>{
 
     const LoginEmail=document.querySelector('.LoginEmail');
 
@@ -80,3 +80,4 @@ LOGINUSER=()=>{
     
 }
 
+export{LOGINUSER}

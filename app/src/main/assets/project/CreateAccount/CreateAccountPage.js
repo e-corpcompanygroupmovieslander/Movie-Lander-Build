@@ -16,9 +16,9 @@ CREATEACCOUNTPAGE=()=>{
 
         <input type='tel' placeholder='Enter Telephone'/>
 
-        <button>Create Account</button>
+        <button id='CreateUser'>Create Account</button>
 
-        <button id='Login' >LogIn</button>
+        <button id='Login'>LogIn</button>
 
     `);
 
@@ -26,6 +26,14 @@ CREATEACCOUNTPAGE=()=>{
 
         EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()});
 
+    })
+
+    STORE('','Updates','CreateAccountPage');
+
+    CLICKED('#CreateUser',()=>{
+
+        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+        
     })
 
 }

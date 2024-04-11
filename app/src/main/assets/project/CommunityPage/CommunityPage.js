@@ -16,7 +16,7 @@ COMMUNITYPAGE=()=>{
 
         <h1 class='Message'>Connect With Others</h1>
 
-        <button class='Button'>
+        <button id='MovieRequest' class='Button'>
 
             <h1 class='Buttontitle'>Movie Request</h1>
 
@@ -24,7 +24,7 @@ COMMUNITYPAGE=()=>{
         
         </button>
 
-        <button class='Button'>
+        <button id='Trends' class='Button'>
 
             <h1 class='Buttontitle'>Trends</h1>
 
@@ -32,7 +32,7 @@ COMMUNITYPAGE=()=>{
         
         </button>
 
-        <button class='Button'>
+        <button id='MovieNight' class='Button'>
 
             <h1 class='Buttontitle'>Movie Night</h1>
 
@@ -49,5 +49,9 @@ COMMUNITYPAGE=()=>{
         EXTERNALJS('../project/UserAccountPage/UserAccountPage.js',()=>{USERACCOUNTPAGE()})
 
     })
+
+    STORE('','Updates','CommunityPage')
+
+    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }

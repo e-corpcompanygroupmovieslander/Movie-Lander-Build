@@ -53,7 +53,7 @@ USERACCOUNTPAGE=()=>{
                 
                 </button>
 
-                <button class='Button'>
+                <button id='LibraryPage' class='Button'>
 
                     <h1 class='Buttontitle'>Library</h1>
 
@@ -61,7 +61,7 @@ USERACCOUNTPAGE=()=>{
                 
                 </button>
 
-                <button class='Button'>
+                <button id='Notifications' class='Button'>
 
                     <h1 class='Buttontitle'>Notifications</h1>
 
@@ -165,6 +165,18 @@ USERACCOUNTPAGE=()=>{
         CLICKED('#Updates',()=>{
 
             WEBSITE(UPDATEAPI);
+        })
+
+        CLICKED('#Notifications',()=>{
+
+            EXTERNALJS('../project/NotificationsPage/NotificationsPage.js',()=>{NOTIFICATIONSPAGE()})
+
+        })
+
+        CLICKED('#LibraryPage',()=>{
+
+            EXTERNALJS('../project/LibraryPage/LibraryPage.js',()=>{LIBARYPAGE()})
+
         })
 
     })
