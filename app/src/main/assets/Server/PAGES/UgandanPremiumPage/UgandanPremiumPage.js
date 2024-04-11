@@ -113,12 +113,18 @@ const UGANDANPREMIUMPAGE=()=>{
 
             ()=>EXTERNALJS('../project/UserAccountPage/UserAccountPage.js',()=>{USERACCOUNTPAGE()}),
 
-            ()=>MOVIESDETAILSPAGE()
+            ()=>CONDITION(sessionStorage.getItem('PremiumPath') === 'MyAccount',
+
+                ()=>EXTERNALJS('../project/UserAccountSettings/UserAccountSettings.js',()=>{USERSETTINGSACCOUNTPAGE()}),
+
+                ()=>MOVIESDETAILSPAGE()
+
+            )
 
         )
         
     })
 
 }
-
+ 
 export{UGANDANPREMIUMPAGE}

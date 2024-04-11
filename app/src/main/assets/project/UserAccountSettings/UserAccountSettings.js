@@ -36,13 +36,13 @@ USERSETTINGSACCOUNTPAGE=()=>{
 
                 </button>
 
-                <button class='MyDataButton'>
+                <button id='Expiration' class='MyDataButton'>
 
                     <h1 class='mytitle'>Expiration Date</h1>
 
                     <img class='myIcon' src='../library/Assets/icon/subscription.png'/>
                 
-                    <h1 id='ExSubPlan' class='MyData'>Null</h1>
+                    <h1 id='ExSubPlan' class='MyData'></h1>
 
                 </button>
 
@@ -62,6 +62,13 @@ USERSETTINGSACCOUNTPAGE=()=>{
 
             EXTERNALJS('../project/UserAccountPage/UserAccountPage.js',()=>{USERACCOUNTPAGE()})
 
+        })
+
+        CLICKED('#LogOut',()=>{
+
+            STORE('','PremiumPath','MyAccount');
+
+            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
         })
 
         DECLARATION('#SubPlan',(ELEMENT)=>{
@@ -90,6 +97,18 @@ USERSETTINGSACCOUNTPAGE=()=>{
     
             })
 
+        })
+
+        DECLARATION('#Expiration',(ELEMENT)=>{
+
+            CONDITION(localStorage.getItem('Premium') ,
+    
+                ()=>STYLED(ELEMENT,'display','block'),
+    
+                ()=>STYLED(ELEMENT,'display','none')
+        
+            )
+    
         })
 
         DECLARATION('#ExSubPlan',(ELEMENT)=>{

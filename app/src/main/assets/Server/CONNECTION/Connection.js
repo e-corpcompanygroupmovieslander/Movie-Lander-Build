@@ -6,29 +6,29 @@ import { PREMIUMPAGE } from "../PAGES/PremiumPage/PremiumPage.js"
 
 const CONNECTION=()=>{
 
-    CONDITION(sessionStorage.getItem('Updates')==='HomePage',
-
-        ()=>HOMEPAGE(),
-
-        ()=>CONDITION(sessionStorage.getItem('Updates')==='PremiumPage',
-
-        ()=>PREMIUMPAGE(),
-
-        ()=>CONDITION(sessionStorage.getItem('Updates')==='CatergoriesPage',
-
-        ()=>MOVIESDETAILSPAGE(),
-
-        ()=>alert('')
-
-        )
-
-        )
-
-    )
-
     AUTOPREMIUMUSER();
 
     AUTODELETEACCOUNT();
+
+    const CASES={
+        "HomePage":()=>{
+            HOMEPAGE()
+        },
+        "PremiumPage":()=>{
+            PREMIUMPAGE()
+        },
+        "CatergoriesPage":()=>{
+            MOVIESDETAILSPAGE()
+        }
+    }
+
+    const DEFAULT=()=>{
+
+        EXTERNALJS('../library/Connection/Connection.js',()=>{APPSTART()})
+
+    }
+
+    ROUTER(sessionStorage.getItem('Updates'),CASES,DEFAULT);
 
 }
 

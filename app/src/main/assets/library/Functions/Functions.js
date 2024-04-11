@@ -342,6 +342,12 @@ const REMOVESTORE=(STORAGE,KEY)=>{
     )
 }
 
+//SWITCH
+const ROUTER = (input, cases, defaultCase) => {
+    const caseFunction = cases[input] || defaultCase;
+    return caseFunction();
+};
+
 //PRODUCE A SINGLE OUT PUT
 const SINGLESHUFFLE = (array, callback) => {
     const randomIndex = Math.floor(Math.random() * array.length);
@@ -370,6 +376,7 @@ const STORE=(STORAGE,KEY,ELEMENT)=>{
 const STYLED=(ELEMENT,PROPERTY,VALUE)=>{
     ELEMENT.style[PROPERTY]=VALUE;
 }
+
 
 //OPEN TELEGRAM
 const TELEGRAM = (username) => {

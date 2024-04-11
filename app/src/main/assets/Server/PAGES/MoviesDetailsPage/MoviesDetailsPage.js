@@ -93,17 +93,17 @@ const MOVIESDETAILSPAGE=()=>{
 
             CONDITION(sessionStorage.getItem('Path') === 'HomePage',
 
-                ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
+            ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
 
-                ()=>CONDITION(sessionStorage.getItem('Path') === 'CatergoriesPage',
+            ()=>CONDITION(sessionStorage.getItem('Path') === 'CatergoriesPage',
 
-                ()=> EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()}),
-            
-                ()=>console.log('not homePage')
-        
+                ()=>EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()}),
+
+                ()=>MOVIESDETAILSPAGE()
+
             )
-        
-            )
+
+        )
             
         })
 
