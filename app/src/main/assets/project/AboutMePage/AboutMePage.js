@@ -96,6 +96,10 @@ ABOUTMEPAGE=()=>{
 
             REMOVESTORE('local','UserData');
 
+            REMOVESTORE('local','Premium');
+            
+            REMOVESTORE('local','PremiumUser');
+
             EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()})
 
         })
