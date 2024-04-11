@@ -11,7 +11,7 @@ const HOMEPAGE=()=>{
 
             <div id='homeHolder' class='View'>
 
-                <header>
+                <header class='AppHeader'>
 
                     <h1 class='SectionName' >Animations</h1>
 
@@ -29,7 +29,7 @@ const HOMEPAGE=()=>{
 
             <div id='homeHolder' class='View'>
 
-                <header>
+                <header class='AppHeader'>
 
                     <h1 class='SectionName' >Movies</h1>
 
@@ -47,7 +47,7 @@ const HOMEPAGE=()=>{
 
             <div id='homeHolder' class='View'>
 
-                <header>
+                <header class='AppHeader'>
 
                     <h1 class='SectionName' >Marathons</h1>
 
@@ -65,7 +65,7 @@ const HOMEPAGE=()=>{
 
             <div id='homeHolder' class='View'>
 
-                <header>
+                <header class='AppHeader'>
 
                     <h1 class='SectionName' >Series</h1>
 
@@ -78,10 +78,11 @@ const HOMEPAGE=()=>{
                     <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
             
                 </div>
-            
+
             </div>
 
-        
+            <br><br><br>
+
         `)
 
         HOMEANIMATION();
