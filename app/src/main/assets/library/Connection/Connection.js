@@ -8,6 +8,8 @@ APPMODE(localStorage.getItem('AppColour'),'','#121212');
 BODY();
 ZOOM()
 
+
+
 APPSTART=()=>{
 
     CONDITION(VERSIONSTATUS === 'Minor',

@@ -48,7 +48,7 @@ CATERGORIESSELECTIONPAGE=()=>{
     
                             STORE('','MovieData',JSON.stringify(element));
     
-                            MODULE('https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js','CONNECTION',(CONNECTION)=>{CONNECTION()})
+                            MODULE(Onlink,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
                         })
     
