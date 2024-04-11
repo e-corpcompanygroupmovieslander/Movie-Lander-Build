@@ -16,7 +16,7 @@ BUSINESSTOOLSPAGE=()=>{
 
         <h1 class='Message'>Link Up</h1>
 
-        <button class='Button'>
+        <button id='Advertising' class='Button'>
 
             <h1 class='Buttontitle'>Advertising</h1>
 
@@ -24,7 +24,7 @@ BUSINESSTOOLSPAGE=()=>{
         
         </button>
 
-        <button class='Button'>
+        <button id='Market' class='Button'>
 
             <h1 class='Buttontitle'>Market Place</h1>
 
@@ -32,7 +32,7 @@ BUSINESSTOOLSPAGE=()=>{
         
         </button>
 
-        <button class='Button'>
+        <button id='Shop' class='Button'>
 
             <h1 class='Buttontitle'>Shop</h1>
 
