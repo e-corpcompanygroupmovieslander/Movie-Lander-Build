@@ -97,10 +97,20 @@ const UPDATEMESSAGE=`
     
     </p>
 
-
 `;
 
 //Online Updating
-const Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
+let Onlink='';
+
+
+if (navigator.onLine) {
+    
+    Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
+
+} else {
+    
+    Onlink='../../Server/CONNECTION/Connection.js';
+
+}
 
 

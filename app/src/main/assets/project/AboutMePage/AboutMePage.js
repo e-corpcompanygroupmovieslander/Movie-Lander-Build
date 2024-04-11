@@ -8,7 +8,7 @@ ABOUTMEPAGE=()=>{
 
                 <img id='BackIcon' class='BackIcon' src='../library/Assets/icon/arrow.png'/>
 
-                <h1 class='Titles'>Bio Data</h1>
+                <h1 class='Titles'>Biography</h1>
             
             </header>
 
