@@ -43,7 +43,7 @@ const MOVIESDETAILSPAGE=()=>{
 
                             <img id='ParentalControl' src='../library/Assets/icon/profile.png'/>
 
-                            <img id='FreeMovies' src='../library/Assets/icon/save.png'/>
+                            <img id='SaveMovie' src='../library/Assets/icon/save.png'/>
                                              
                         </footer>
 
@@ -122,6 +122,24 @@ const MOVIESDETAILSPAGE=()=>{
             PREMIUMPAGE();
         
         })
+
+        CLICKED('#SaveMovie', () => {
+
+            let SAVEDMOVIES = [];
+
+            JSONIFICATION(data,(data)=>{
+
+                // Assuming 'data' contains the movie to be saved
+                SAVEDMOVIES.push(data);
+
+             // Storing SAVEDMOVIES array in local storage
+             STORE('local', 'SAVEDMOVIES', SAVEDMOVIES);
+
+            })
+        
+        });
+        
+
     })
 
     

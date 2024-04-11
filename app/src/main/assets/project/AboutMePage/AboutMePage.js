@@ -58,7 +58,7 @@ ABOUTMEPAGE=()=>{
 
                     <h1 class='mytitle'>Reference Code</h1>
 
-                    <img class='myIcon' src='../library/Assets/icon/secretCode.png'/>
+                    <img class='myIcon' src='../library/Assets/icon/secretcode.png'/>
                 
                     <h1 class='MyData'>${data.SecretCode}</h1>
 
@@ -68,7 +68,7 @@ ABOUTMEPAGE=()=>{
 
                     <h1 class='Buttontitle'>Log Out</h1>
 
-                    <img class='ButtonIcon' src='../library/Assets/icon/logOut.png'/>
+                    <img class='ButtonIcon' src='../library/Assets/icon/logout.png'/>
                 
                 </button>
 
@@ -79,6 +79,8 @@ ABOUTMEPAGE=()=>{
                     <img class='ButtonIcon' src='../library/Assets/icon/delete.png'/>
                 
                 </button>
+
+                <br><br>
 
             </div>
 
