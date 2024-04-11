@@ -10,13 +10,15 @@ const AUTODELETEACCOUNT=(DIV)=>{
 
                 REMOVESTORE('local','User'),REMOVESTORE('local','UserData');
 
+                REMOVESTORE('local','Premium'),REMOVESTORE('local','PremiumUser');
+
                 LOGINPAGE(DIV);
   
             }),
 
             ()=>CHECK(user,(result)=>{
 
-                console.log('Account Not Deleted')
+                console.log('Account Not Deleted');
                 
             })
             
