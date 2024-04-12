@@ -4,7 +4,7 @@ const UGANDANPREMIUMPAGE=()=>{
 
     DISPLAY('',`
 
-        <header class='Header'>
+        <header class='AppHeader'>
 
             <img id='BackIcon' class='BackIcon' src='../library/Assets/icon/arrow.png'/>
 
