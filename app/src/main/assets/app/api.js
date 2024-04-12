@@ -66,6 +66,8 @@ const YOUTUBELINK='https://www.youtube.com/embed/';
 
 const NIGERIANAPI='https://script.googleusercontent.com/macros/echo?user_content_key=Pllw-7pMXhAK0SiRbfcL8UySdNaLFVya5Pe4TJj75y-tNbiQEEEhc4xXZBl2FSBw7DkUzXgE-r4tNo7-CMNxrGnEgKmfA76km5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnF3p0xbydT4VIaH_G7L3O4p9RCeoUSves3j08GDWlpBvSD2-MrGik5yiuxvtEpB9wwS5mVQKuUPB5KZarqLJeepf-U_goC1ssg&lib=MRCYLTUge5mBullFXgPM5hcSoMAbC-O1l';
 
+const ADVENTUREAPI='https://script.googleusercontent.com/macros/echo?user_content_key=rWiUMRIcU1z3LUQuI4qsVFCzK_P6Y7KiBTk3hjLPwWIxrMIhQDITJgYCp2R75iV37ghtUZrYzLD-jQxxuNqwMSnNaFSvVdW3m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnG4ro4xKds47FkAIjJn_5kIpiXnvLE3ePfkADE7peZQt68Xz-9l3AVWkBGmJFgKK4addsW85NBSOGvtk7Qoj3mmQ3km_hyltOQ&lib=MAhTCPkwWVv8jzKQ6O1pARMSoMAbC-O1l';
+
 //UGANDAN PAYMENT
 
 const UGDAILY='1000';
