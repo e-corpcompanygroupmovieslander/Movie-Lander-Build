@@ -55,7 +55,7 @@ const MOVIESDETAILSPAGE=()=>{
 
             <footer>
 
-                <button class='Bottomdata'>Review</button>
+                <button class='Bottomdata'>Insight</button>
 
                 <button id='Moviedata' class='Bottomdata'>Details</button>
 

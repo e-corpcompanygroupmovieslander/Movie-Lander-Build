@@ -55,6 +55,13 @@ margin-bottom: auto;
     text-align: center;
     color:gainsboro;
     top: 0;
-    margin-top: 0.4rem;
-    
+    margin-top: 0.4rem;   
+}
+
+#CreateUser{
+    background: #00800090;
+}
+
+#Login{
+    background: #0000ff90;
 }

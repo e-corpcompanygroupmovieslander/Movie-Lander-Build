@@ -8,9 +8,9 @@ LOGINPAGE=()=>{
 
         <input class='LoginPassword' type='password' placeholder='Enter Password'/>
 
-        <h1  class='Forgot'>ForgotPassword?</h1>
+        <h1  class='Forgot'>Forgot Password?</h1>
 
-        <button id='LoginUser'>LogIn</button>
+        <button id='LoginUser'>Login</button>
 
         <button id='CreateAccount'>Create Account</button>
     

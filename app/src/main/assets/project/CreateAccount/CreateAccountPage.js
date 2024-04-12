@@ -26,7 +26,7 @@ CREATEACCOUNTPAGE=()=>{
 
         <button id='CreateUser'>Create Account</button>
 
-        <button id='Login'>LogIn</button>
+        <button id='Login'>Login</button>
 
         <div class='CountriesDiv'>
 

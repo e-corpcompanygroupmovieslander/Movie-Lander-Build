@@ -43,7 +43,13 @@ PARENTALCONTROLPAGE=()=>{
 
         ()=>DISPLAY(ELEMENT,'Set'),
 
-        ()=>DISPLAY(ELEMENT,'Clear')
+        ()=>CHECK('',(result)=>{
+            
+            DISPLAY(ELEMENT,'Clear');
+
+            STYLED(ELEMENT,'background','#ff000080');
+
+        })
     
         )
 

@@ -41,9 +41,19 @@ APPLOCKPAGE=()=>{
 
         CONDITION(!localStorage.getItem('AppLock'),
 
-        ()=>DISPLAY(ELEMENT,'Set'),
+        ()=>CHECK('',(result)=>{
+            
+            DISPLAY(ELEMENT,'Enable');
 
-        ()=>DISPLAY(ELEMENT,'Clear')
+        }),
+
+        ()=>CHECK('',(result)=>{
+            
+            DISPLAY(ELEMENT,'Disable');
+
+            STYLED(ELEMENT,'background','#ff000080');
+
+        })
     
         )
 
