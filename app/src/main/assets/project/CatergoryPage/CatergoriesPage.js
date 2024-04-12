@@ -44,6 +44,8 @@ CATERGORIESPAGE=()=>{
 
                     EVENT(MOVIESHOLDER,'click',()=>{
 
+                        REMOVESTORE('','Path');
+
                         STORE('','MoviesData',JSON.stringify(element));
 
                         EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});

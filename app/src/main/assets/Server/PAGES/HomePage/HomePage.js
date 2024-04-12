@@ -15,7 +15,7 @@ const HOMEPAGE=()=>{
 
                     <h1 class='SectionName' >Animations</h1>
 
-                    <img id='BackIcon' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                    <img id='MoreAnimations' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                 
                 </header>
 
@@ -33,7 +33,7 @@ const HOMEPAGE=()=>{
 
                     <h1 class='SectionName' >Movies</h1>
 
-                    <img id='BackIcon' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                    <img id='MoreMovies' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                 
                 </header>
 
@@ -51,7 +51,7 @@ const HOMEPAGE=()=>{
 
                     <h1 class='SectionName' >Marathons</h1>
 
-                    <img id='BackIcon' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                    <img id='MoreMarathons' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                 
                 </header>
 
@@ -69,7 +69,7 @@ const HOMEPAGE=()=>{
 
                     <h1 class='SectionName' >Series</h1>
 
-                    <img id='BackIcon' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                    <img id='MoreSeries' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                 
                 </header>
 
@@ -92,6 +92,83 @@ const HOMEPAGE=()=>{
         HOMEMARATHONS();
 
         HOMESERIES();
+
+        CLICKED('#MoreAnimations',()=>{
+
+            const DATA={
+                "Sections":"Animations",
+                "link":ANIMATIONAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+
+        CLICKED('#MoreMovies',()=>{
+
+            const DATA={
+                "Sections":"Action",
+                "link":MOVIESAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+
+        CLICKED('#MoreMarathons',()=>{
+
+            const DATA={
+                "Sections":"Marathons",
+                "link":MARATHONAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+
+        CLICKED('#MoreSeries',()=>{
+
+            const DATA={
+                "Sections":"Series",
+                "link":SERIESAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+        
 
     })
     

@@ -22,8 +22,14 @@ CATERGORIESSELECTIONPAGE=()=>{
 
         CLICKED('#BackIcon',()=>{
 
-            EXTERNALJS('../project/CatergoryPage/CatergoriesPage.js',()=>{CATERGORIESPAGE()})
- 
+            CONDITION(sessionStorage.getItem('Path') === 'SeeMore',
+
+            ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
+
+            ()=>EXTERNALJS('../project/CatergoryPage/CatergoriesPage.js',()=>{CATERGORIESPAGE()})
+        
+            )
+    
         })
 
         DECLARATION('#DataDiv',(ELEMENT)=>{

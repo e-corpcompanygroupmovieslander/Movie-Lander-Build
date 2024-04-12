@@ -1,5 +1,7 @@
 HOMEPAGE=()=>{
 
+    REMOVESTORE('','Path');
+
     DISPLAY('',`
 
         <div id='HomeDiv' class='ScrollView'>
