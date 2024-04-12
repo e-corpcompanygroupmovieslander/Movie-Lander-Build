@@ -1,4 +1,4 @@
-package com.advance.advance_native;
+package com.ecorpcompanygroup.movie_lander;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;
