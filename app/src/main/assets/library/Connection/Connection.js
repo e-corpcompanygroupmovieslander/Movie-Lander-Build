@@ -46,7 +46,7 @@ const APPSTART = () => {
 
             DISPLAY('',`
 
-                <img class='AppLogo' src='../library/Assets/images/movie lander logo.png'/>
+                <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
 
                 <input id='Pin' maxlength='5' type='tel' placeholder='Enter Your Pin'/>
 
