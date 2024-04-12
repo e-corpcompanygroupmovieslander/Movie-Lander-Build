@@ -7,6 +7,7 @@ import { HOMESERIES } from "../HomeSeries/HomeSeries.js";
 import { LATESTANIMATION } from "../LatestAnimation/LatestAnimation.js";
 import { LATESTMOVIES } from "../LatestMovies/LatestMovies.js";
 import { LATESTNIGERIAN } from "../LatestNigerian/LatestNigerian.js";
+import { LATESTROMANCE } from "../LatestRomance/LatestRomance.js";
 
 const HOMEPAGE=()=>{
 
@@ -42,7 +43,7 @@ const HOMEPAGE=()=>{
 
                 <header class='AppHeader'>
 
-                    <h1 class='SectionName' >Movies</h1>
+                    <h1 class='SectionName' >Action</h1>
 
                     <img id='MoreMovies' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                 
@@ -140,6 +141,12 @@ const HOMEPAGE=()=>{
 
             </div>
 
+            <div id='LatestRomance' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
+
             <br><br><br>
 
         `)
@@ -161,6 +168,8 @@ const HOMEPAGE=()=>{
         HOMEADVENTURE();
 
         HOMEHORROR();
+
+        LATESTROMANCE();
 
         CLICKED('#MoreAnimations',()=>{
 
