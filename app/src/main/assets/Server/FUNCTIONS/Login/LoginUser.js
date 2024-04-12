@@ -4,67 +4,66 @@ const LOGINUSER=()=>{
 
     const LoginPassword=document.querySelector('.LoginPassword');
 
-    const LoginUser=document.querySelector('#LoginUser');
+    CONDITION(LoginEmail.value,
 
-    CONDITION(!LoginEmail.value,
+        ()=>CONDITION(LoginPassword.value,
 
-        ()=>MESSAGE('Enter User Email'),
+            ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
 
-        ()=>CONDITION(!LoginPassword.value,
-
-            ()=>MESSAGE('Enter User Password'),
-    
-            ()=>CHECK(LoginEmail,(result)=>{
-
-                LOADER(LoginUser);
+                LOADER(ELEMENT);
 
                 GETPACKAGE(LOGINAPI,'cors',(data)=>{
 
                     FINDER(data,'Email',LoginEmail.value,(user)=>{
 
-                        CONDITION(!LoginEmail.value === user.Email ,
+                        CONDITION( user.Email === LoginEmail.value ,
 
-                            ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
-
-                                MESSAGE('Wrong Email');
-
-                                ORIGIN(ELEMENT,'Login')
-
-                            }),
-
-                            ()=>CONDITION(!user.Password === LoginPassword.value,
+                            ()=>CONDITION( user.Password === LoginPassword.value,
 
                                 ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
 
-                                    MESSAGE('Wrong Password');
-    
-                                    ORIGIN(ELEMENT,'Login')
-    
-                                }),
+                                    GETPACKAGE(DELETEACCOUNTGET,'cors',(data)=>{
 
-                                ()=>GETPACKAGE(DELETEACCOUNTGET,'cors',(data)=>{
+                                        FINDER(data,'User',user.SecretCode,(users)=>{
 
-                                    FINDER(data,'User',user.SecretCode,(result)=>{
+                                            CONDITION(users.User === user.SecretCode ,
 
-                                        CONDITION(user.SecretCode === result.User,
+                                                ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
+            
+                                                    MESSAGE('Something Went Wrong');
+                    
+                                                    ORIGIN(ELEMENT,'Login')
+                    
+                                                }),
+            
+                                                ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',user.SecretCode),STORE('local','UserData',JSON.stringify(user))})
+                                            
+                                            )
 
-                                            ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
 
-                                                MESSAGE('Something Went Wrong');
-                
-                                                ORIGIN(ELEMENT,'Login')
-                
-                                            }),
-
-                                            ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',user.SecretCode),STORE('local','UserData',JSON.stringify(user))})
-                                        
-                                        )
+                                        })
 
                                     })
 
-                                })
-                            
-                            )
+                                }),
+
+                                ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
+
+                                    MESSAGE('Wrong  User Password');
+            
+                                    ORIGIN(ELEMENT,'Login')
+            
+                                }),
+
+                            ),
+
+                            ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
+
+                                MESSAGE('Wrong User Email');
+            
+                                ORIGIN(ELEMENT,'Login')
+            
+                            })
                         
                         )
 
@@ -72,12 +71,16 @@ const LOGINUSER=()=>{
 
                 })
 
-            })
-    
-        )
+            }),
 
-    )
+            ()=>MESSAGE('Enter User Password')
     
+        ),
+
+        ()=>MESSAGE('Enter User Email')
+    
+    )
+
 }
 
 export{LOGINUSER}
