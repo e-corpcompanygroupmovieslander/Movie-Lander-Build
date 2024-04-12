@@ -26,5 +26,35 @@ margin-bottom: auto;
 }
 
 .CountriesDiv{
+    height: auto;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
     display: none;
+}
+
+.DivData{
+    top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: transparent;
+    bottom: 70px;
+    border-top: 1px solid #a52a2a50;
+    border-bottom: 1px solid #a52a2a50;
+}
+
+#CloseButtonCountry{
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    background: #ff000080;
+}
+
+.CountryMessage{
+    position: relative;
+    text-align: center;
+    color:gainsboro;
+    top: 0;
+    margin-top: 0.4rem;
+    
 }

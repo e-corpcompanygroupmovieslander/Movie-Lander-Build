@@ -1,7 +1,5 @@
 LOGINPAGE=()=>{
 
-    STORE('','Updates','LoginPage')
-
     DISPLAY('',`
 
         <img class='AppLogo' src='../library/Assets/images/playstore.png'/>

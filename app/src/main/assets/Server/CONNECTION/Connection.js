@@ -38,9 +38,6 @@ const CONNECTION=()=>{
         "BussinessTools":()=>{
             BUSINESSTOOL();
         },
-        "CreateAccountPage":()=>{
-            CREATEUSER();
-        },
         "ForgotPasswordPage":()=>{
             FORGOTPASSWORDPAGE();
         },

@@ -1,5 +1,7 @@
 CREATEACCOUNTPAGE=()=>{
 
+    REMOVESTORE('','Code');
+
     DISPLAY('',`
 
         <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
@@ -26,9 +28,18 @@ CREATEACCOUNTPAGE=()=>{
 
         <button id='Login'>LogIn</button>
 
-        <div class='CountriesDiv'></div>
+        <div class='CountriesDiv'>
+
+            <h2 class='CountryMessage'>Select Country</h2>
+
+            <button id='CloseButtonCountry' >Close</button>
+
+            <div class='DivData'><div>
+        
+        </div>
 
     `);
+
 
     CLICKED('#Login',()=>{
 
@@ -39,14 +50,23 @@ CREATEACCOUNTPAGE=()=>{
     
     CLICKED('#CreateUser',()=>{
 
-        STORE('','Updates','CreateAccountPage');
-
-        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+        EXTERNALJS('../project/CreateAccount/CreateUserAccount.js',()=>{CREATEUSERACCOUNT()});
         
     })
 
-    STORE('','Updates','CreateAccountPageUserFunction');
+    CLICKED('#UserLocation',()=>{
 
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+        EXTERNALJS('../project/CreateAccount/CountrySelectionCode.js',()=>{SELECTCOUNTRY()});
+
+    })
+
+    CLICKED('#UserDate',()=>{
+
+        DECLARATION('#UserDate',(ELEMENT)=>{
+            ELEMENT.type='date'
+        })
+
+    })
+
 
 }
