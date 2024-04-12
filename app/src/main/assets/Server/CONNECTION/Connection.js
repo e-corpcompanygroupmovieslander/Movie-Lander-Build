@@ -1,6 +1,5 @@
 import { BUSINESSTOOL } from "../FUNCTIONS/BusinessTools/BusinessTools.js"
 import { COMMUNITY } from "../FUNCTIONS/Community/Community.js"
-import { CREATEACCOUNTPAGEDATA } from "../FUNCTIONS/CreateAccount/CreateAccountPage.js"
 import { NOTIFICATIONS } from "../FUNCTIONS/Notifications/Notifications.js"
 import { AUTODELETEACCOUNT } from "../PAGES/AutoDeleteAccount/AutoDeleteAccount.js"
 import { HOMEPAGE } from "../PAGES/HomePage/HomePage.js"
@@ -37,9 +36,6 @@ const CONNECTION=()=>{
         },
         "LibraryPage":()=>{
             LIBRARY();
-        },
-        "CreateAccountPageUserFunction":()=>{
-            CREATEACCOUNTPAGEDATA();
         },
         "USERSETTINGSACCOUNTPAGEPREMIUM":()=>{
             USERSETTINGSACCOUNTPAGEPREMIUM();
