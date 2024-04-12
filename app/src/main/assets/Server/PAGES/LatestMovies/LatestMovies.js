@@ -18,7 +18,7 @@ const LATESTMOVIES=()=>{
                         
                         <button class='About'>Watch</button>
 
-                        <h1 class='UserName'>${element.MovieName}</h1>
+                        <h1 id='LatestTitle' class='UserName'>${element.MovieName}</h1>
                     `)
 
                     EVENT(ANIME,'click',()=>{

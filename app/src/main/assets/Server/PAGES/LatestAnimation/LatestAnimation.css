@@ -10,3 +10,16 @@
     height: 100%;
     object-fit: cover;
 }
+
+#LatestTitle{
+    background-color: #dcdcdc80;
+    width: auto;
+    height: 40px;
+    color: brown;
+    border-top: 2px solid brown;
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding-left: 1%;
+}
