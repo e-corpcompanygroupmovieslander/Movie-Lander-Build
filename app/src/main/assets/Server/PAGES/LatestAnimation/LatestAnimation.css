@@ -13,7 +13,7 @@
 
 #LatestTitle{
     background-color: #dcdcdc80;
-    width: auto;
+    width: fit-content;
     height: 40px;
     color: brown;
     border-top: 2px solid brown;
