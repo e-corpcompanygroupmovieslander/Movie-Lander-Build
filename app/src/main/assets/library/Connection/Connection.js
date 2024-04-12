@@ -60,7 +60,7 @@ const APPSTART = () => {
 
             CLICKED('#ForgotPin', () => {
 
-                MODULE(`${Onlink}`,'CONNECTION',(CONNECTION) => { CONNECTION() });
+                EXTERNALJS('../project/AppLockPage/RecoveryLock.js',()=>{LOCKRECOVERY()})
     
             });
 

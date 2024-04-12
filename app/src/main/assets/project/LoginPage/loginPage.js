@@ -30,9 +30,7 @@ LOGINPAGE=()=>{
 
     CLICKED('.Forgot',()=>{
 
-        STORE('','Updates','ForgotPasswordPage');
-
-        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+        EXTERNALJS('../project/ForgotPassword/ForgotPassword.js',()=>{FORGOTPASSWORDPAGE()})
 
     })
 
