@@ -10,7 +10,7 @@ const LATESTANIMATION=()=>{
 
             SINGLESHUFFLE(data,(element)=>{
 
-                CREATEELEMENT('div','',(ANIME)=>{
+                CREATEELEMENT('div','latestImageDiv',(ANIME)=>{
 
                     DISPLAY(ANIME,`
 

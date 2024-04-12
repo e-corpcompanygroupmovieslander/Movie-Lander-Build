@@ -10,7 +10,7 @@ const LATESTNIGERIAN=()=>{
 
             SINGLESHUFFLE(data,(element)=>{
 
-                CREATEELEMENT('div','LatestHolder',(ANIME)=>{
+                CREATEELEMENT('div','latestImageDiv',(ANIME)=>{
 
                     DISPLAY(ANIME,`
 
