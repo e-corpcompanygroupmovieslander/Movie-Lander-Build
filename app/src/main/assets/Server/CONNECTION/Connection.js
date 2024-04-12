@@ -2,7 +2,6 @@ import { BUSINESSTOOL } from "../FUNCTIONS/BusinessTools/BusinessTools.js"
 import { COMMUNITY } from "../FUNCTIONS/Community/Community.js"
 import { CREATEUSER } from "../FUNCTIONS/CreateAccount/CreateAccount.js"
 import { CREATEACCOUNTPAGEDATA } from "../FUNCTIONS/CreateAccount/CreateAccountPage.js"
-import { LOGINUSER } from "../FUNCTIONS/Login/LoginUser.js"
 import { NOTIFICATIONS } from "../FUNCTIONS/Notifications/Notifications.js"
 import { AUTODELETEACCOUNT } from "../PAGES/AutoDeleteAccount/AutoDeleteAccount.js"
 import { FORGOTPASSWORDPAGE } from "../PAGES/ForgotPassword/ForgotPassword.js"
@@ -38,8 +37,6 @@ const CONNECTION=()=>{
         },
         "BussinessTools":()=>{
             BUSINESSTOOL();
-        },"LoginPage":()=>{
-            LOGINUSER();
         },
         "CreateAccountPage":()=>{
             CREATEUSER();

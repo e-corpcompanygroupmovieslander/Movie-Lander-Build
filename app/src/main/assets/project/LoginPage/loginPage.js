@@ -18,12 +18,10 @@ LOGINPAGE=()=>{
     
     `);
 
-    STORE('','Updates','LoginPage');
-
     CLICKED('#LoginUser',()=>{
 
-        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-        
+        EXTERNALJS('../project/LoginPage/LoginUser.js',()=>{LOGINUSER()})
+          
     })
 
     CLICKED('#CreateAccount',()=>{
