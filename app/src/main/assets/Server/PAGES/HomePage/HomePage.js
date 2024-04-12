@@ -2,12 +2,21 @@ import { HOMEANIMATION } from "../HomeAnimations/HomeAnimations.js";
 import { HOMEMARATHONS } from "../HomeMarathons/HomeMarathons.js";
 import { HOMEMOVIES } from "../HomeMovies/HomeMovies.js";
 import { HOMESERIES } from "../HomeSeries/HomeSeries.js";
+import { LATESTANIMATION } from "../LatestAnimation/LatestAnimation.js";
+import { LATESTMOVIES } from "../LatestMovies/LatestMovies.js";
+import { LATESTNIGERIAN } from "../LatestNigerian/LatestNigerian.js";
 
 const HOMEPAGE=()=>{
 
     DECLARATION('#HomeDiv',(ELEMENT)=>{
 
         DISPLAY(ELEMENT,`
+
+            <div id='LatestAnimation' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
 
             <div id='homeHolder' class='View'>
 
@@ -42,6 +51,12 @@ const HOMEPAGE=()=>{
                     <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
             
                 </div>
+            
+            </div>
+
+            <div id='LatestMovies' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
             
             </div>
 
@@ -81,17 +96,29 @@ const HOMEPAGE=()=>{
 
             </div>
 
+            <div id='LatestNigerian' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
+
             <br><br><br>
 
         `)
+
+        LATESTANIMATION();
 
         HOMEANIMATION();
 
         HOMEMOVIES();
 
+        LATESTMOVIES();
+
         HOMEMARATHONS();
 
         HOMESERIES();
+
+        LATESTNIGERIAN();
 
         CLICKED('#MoreAnimations',()=>{
 
