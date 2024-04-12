@@ -4,7 +4,7 @@ LOGINPAGE=()=>{
 
     DISPLAY('',`
 
-        <img class='AppLogo' src='../library/Assets/images/movie lander logo.png'/>
+        <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
 
         <input class='LoginEmail' type='email' placeholder='Enter Email'/>
 

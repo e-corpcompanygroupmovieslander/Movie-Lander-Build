@@ -8,20 +8,32 @@ BODY();
 ZOOM();
 ENVIRONMENT('Test');
 
-if (navigator.onLine) {
 
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.css';
-    document.head.appendChild(link);
+if (localStorage.getItem('Environment') === 'Production') {
+   
+    if (navigator.onLine) {
 
-} else {
-
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.css';
+        document.head.appendChild(link);
+    
+    } else {
+    
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '../Server/CONNECTION/Connection.css';
+        document.head.appendChild(link);
+    
+    }
+    
+}else{
+   
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = '../Server/CONNECTION/Connection.css';
     document.head.appendChild(link);
-
+    
 }
 
 const APPSTART = () => {

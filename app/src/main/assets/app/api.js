@@ -100,16 +100,22 @@ const UPDATEMESSAGE=`
 `;
 
 //Online Updating
-let Onlink='';
+let Onlink='../../Server/CONNECTION/Connection.js';
 
-if (navigator.onLine ) {
+if (localStorage.getItem('Environment') === 'Production' ) {
+ 
+    if (navigator.onLine ) {
 
-    Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
+        Onlink='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/CONNECTION/Connection.js';
+        
+    } else {
     
-} else {
-
-    Onlink='../../Server/CONNECTION/Connection.js';
-      
+        Onlink='../../Server/CONNECTION/Connection.js';
+          
+    }
+    
 }
+
+
 
 

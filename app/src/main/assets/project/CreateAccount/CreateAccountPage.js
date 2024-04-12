@@ -2,7 +2,7 @@ CREATEACCOUNTPAGE=()=>{
 
     DISPLAY('',`
 
-        <img class='AppLogo' src='../library/Assets/images/movie lander logo.png'/>
+        <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
 
         <input id='UserName' type='text' placeholder='Enter User Name'/>
 

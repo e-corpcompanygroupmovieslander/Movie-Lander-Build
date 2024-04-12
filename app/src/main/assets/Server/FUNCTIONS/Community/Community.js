@@ -1,6 +1,16 @@
 const COMMUNITY=()=>{
 
-    console.log('CommunityPage')
+    DECLARATION('#DataDiv',(ELEMENT)=>{
+
+        CREATEELEMENT('button','',(BUTTON)=>{
+
+            DISPLAY(BUTTON,'chat')
+
+            ADD(ELEMENT,BUTTON)
+
+        })
+
+    })
 
 }
 export{COMMUNITY}
