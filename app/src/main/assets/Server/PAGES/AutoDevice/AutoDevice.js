@@ -69,6 +69,10 @@ const AUTODEVICE=()=>{
 
                         var keyValuer = storedJsonObject.words[5].word;
 
+                        var ActiveVersion = storedJsonObject.words[2].word;
+
+                        var Version = storedJsonObject.words[3].word;
+
                         //FOR MY DEVICE
 
                         // Retrieve the JSON string from localStorage
@@ -80,7 +84,7 @@ const AUTODEVICE=()=>{
                         // Access the desired key-value pair from the object
                         var keyValu = storedJsonObject.words[4].word; // Assuming you want to access the key-value pair at index 1
 
-                        var keyValur = storedJsonObject.words[5].word;
+                        var keyValur = storedJsonObject.words[5].word  ;
 
                         DISPLAY('',`
 
@@ -94,11 +98,11 @@ const AUTODEVICE=()=>{
 
                                 <h1 class='Devices'>Active Device</h1>
 
-                                <button id='oldaccount' class='Button'>
+                                <button id='' class='Button'>
                 
                                     <h1 class='Buttontitle'>${keyValue} ${keyValuer}</h1>
-                    
-                                    <img class='ButtonIcon' src='../library/Assets/icon/logout.png'/>
+
+                                    <h1 class='Titles'>${ActiveVersion} ${Version} </h1>
                                 
                                 </button>
 
@@ -108,7 +112,7 @@ const AUTODEVICE=()=>{
                 
                                     <h1 class='Buttontitle'>${keyValu} ${keyValur}</h1>
                     
-                                    <img class='ButtonIcon' src='../library/Assets/icon/logout.png'/>
+                                    <img class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                                 
                                 </button>
 
@@ -126,6 +130,48 @@ const AUTODEVICE=()=>{
                             </button>
                         
                         `);
+
+                        CLICKED('#oldaccount',()=>{
+
+                            CONFIRMBOX(`The New Phone Will Become The Active Account`,(data)=>{
+
+                                CONDITION(data === true,
+                
+                                    ()=>DECLARATION('#oldaccount',(ELEMENT)=>{
+
+                                        LOADER(ELEMENT);
+
+                                        
+                                        const DEVICEDATA={
+
+                                            "User":localStorage.getItem('User'),
+                                            "Device": getBrowserVersion(),
+                                           "Date":new Date()
+                                        }
+                                    
+                                        // Functions to get browser and OS information
+                                        function getBrowserName() { return navigator.appName; }
+                                        function getBrowserVersion() { return navigator.appVersion; }
+                                        function getOSName() { return navigator.platform; }
+                                        function getOSVersion() { return navigator.userAgent; }
+
+                                        POSTPACKAGE(DEVICELOGINAPI,'no-cors',DEVICEDATA,(data)=>{
+
+                                            EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()})
+
+                                        })
+
+                                    }),
+                
+                                    ()=>console.log('Waiting For Major Update')
+                                
+                                )
+                
+                                console.log(data)
+                            })
+
+                        })
+
 
                         CLICKED('#UpdateButton',()=>{
 
