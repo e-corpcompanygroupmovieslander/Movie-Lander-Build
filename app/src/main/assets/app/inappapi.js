@@ -1,3 +1,3 @@
 const  CURRENTVERSION='8.1';
 
-ENVIRONMENT('Test');
+ENVIRONMENT('');
