@@ -40,7 +40,7 @@ const AUTODEVICE=()=>{
             
                             <h1 class='Buttontitle'>Sign Out All Devices</h1>
             
-                            <img class='ButtonIcon' src='../library/Assets/icon/logOut.png'/>
+                            <img class='ButtonIcon' src='../library/Assets/icon/logout.png'/>
                         
                         </button>
                     
