@@ -124,6 +124,10 @@ if (localStorage.getItem('Environment') === 'Production' ) {
     
 }
 
+//PESAPAL CONNECTIONS
 
+const CONSUMERKEY='vvOhTSA4GBwtE6qkMuVq8hwNXMHOLxaO';
 
+const CONSUMERSECRET='28GnlDzP3k/JkdAmUCgEkU8RD7k=';
 
+const CONNECTIONURL='https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/';

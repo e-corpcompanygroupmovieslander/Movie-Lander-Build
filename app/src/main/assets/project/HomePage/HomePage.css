@@ -8,6 +8,7 @@
 .ScrollView{
     overflow-y: auto;
     overflow-x: hidden;
+    background: transparent;
 }
 
 #HomeLoader{
