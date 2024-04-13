@@ -136,20 +136,20 @@ const USPREMIUMPAGE=()=>{
     
                 DECLARATION('#UGWeekly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 
                 DECLARATION('#UGMonthly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 DECLARATION('#UGYearly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
@@ -166,7 +166,7 @@ const USPREMIUMPAGE=()=>{
     
                     } else {
                         
-                        MESSAGE('Something Went Wrong ')
+                        MESSAGE('Something Went Wrong ');
     
                     }
     
@@ -182,14 +182,14 @@ const USPREMIUMPAGE=()=>{
     
                 DECLARATION('#UGDaily',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 
                 DECLARATION('#UGMonthly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
@@ -211,7 +211,7 @@ const USPREMIUMPAGE=()=>{
     
                     } else {
                         
-                        MESSAGE('Something Went Wrong ')
+                        MESSAGE('Something Went Wrong ');
     
                     }
                 
@@ -227,20 +227,20 @@ const USPREMIUMPAGE=()=>{
     
                 DECLARATION('#UGDaily',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 
                 DECLARATION('#UGWeekly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 DECLARATION('#UGYearly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
@@ -256,7 +256,7 @@ const USPREMIUMPAGE=()=>{
     
                     } else {
                         
-                        MESSAGE('Something Went Wrong ')
+                        MESSAGE('Something Went Wrong ');
     
                     }
     
@@ -273,20 +273,20 @@ const USPREMIUMPAGE=()=>{
     
                 DECLARATION('#UGDaily',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 
                 DECLARATION('#UGWeekly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
                 DECLARATION('#UGMonthly',(ELEMENT)=>{
     
-                    ORIGIN(ELEMENT,'Pay')
+                    ORIGIN(ELEMENT,'Pay');
     
                 })
     
@@ -302,7 +302,7 @@ const USPREMIUMPAGE=()=>{
     
                     } else {
                         
-                        MESSAGE('Something Went Wrong ')
+                        MESSAGE('Something Went Wrong ');
     
                     }
                 
