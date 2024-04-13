@@ -105,7 +105,7 @@ const APPSTART = () => {
 
         DISPLAY('',`
 
-            <img class='AppLogo' src='../library/Assets/images/movie lander logo.png'/>
+            <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
 
             <h1 class='VersionName'>Update Required</h1>
 

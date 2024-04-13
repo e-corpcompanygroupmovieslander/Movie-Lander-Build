@@ -102,7 +102,6 @@ const UPDATEMESSAGE=`
 
     Introductions To AppLocks Features and Its Usage Policy
 
-    
     </p>
 
 `;
