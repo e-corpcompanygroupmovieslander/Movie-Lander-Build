@@ -31,6 +31,7 @@
 .Button{
     display: inline-flex;
     margin-top: 0.2rem;
+    background: #a52a2a50;
 }
 
 .Buttontitle{
