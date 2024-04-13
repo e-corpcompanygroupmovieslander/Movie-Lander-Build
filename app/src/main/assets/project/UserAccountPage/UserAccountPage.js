@@ -119,38 +119,38 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#Community',()=>{
 
-            EXTERNALJS('../project/CommunityPage/CommunityPage.js',()=>{COMMUNITYPAGE()})
+            EXTERNALJS('../project/CommunityPage/CommunityPage.js',()=>{COMMUNITYPAGE()});
 
         })
 
         CLICKED('.About',()=>{
 
-            EXTERNALJS('../project/AboutMePage/AboutMePage.js',()=>{ABOUTMEPAGE()})
+            EXTERNALJS('../project/AboutMePage/AboutMePage.js',()=>{ABOUTMEPAGE()});
 
         })
 
         CLICKED('#Settings',()=>{
 
-            EXTERNALJS('../project/SettingsPage/SettingsPage.js',()=>{SETTINGSPAGE()})
+            EXTERNALJS('../project/SettingsPage/SettingsPage.js',()=>{SETTINGSPAGE()});
 
         })
 
         CLICKED('#Contact',()=>{
 
-            EXTERNALJS('../project/ContactUsPage/ContactUsPage.js',()=>{CONTACTUSPAGE()})
+            EXTERNALJS('../project/ContactUsPage/ContactUsPage.js',()=>{CONTACTUSPAGE()});
 
         })
 
         
         CLICKED('#Business',()=>{
 
-            EXTERNALJS('../project/BusinessToolsPage/BusinessToolsPage.js',()=>{BUSINESSTOOLSPAGE()})
+            EXTERNALJS('../project/BusinessToolsPage/BusinessToolsPage.js',()=>{BUSINESSTOOLSPAGE()});
 
         })
 
         CLICKED('#MoreApps',()=>{
 
-            EXTERNALJS('../project/MoreAppsPage/MoreAppsPage.js',()=>{MOREAPPSPAGE()})
+            EXTERNALJS('../project/MoreAppsPage/MoreAppsPage.js',()=>{MOREAPPSPAGE()});
 
         })
 
@@ -158,7 +158,7 @@ USERACCOUNTPAGE=()=>{
 
             STORE('','PremiumPath','PremiumPage');
 
-            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()});
 
         })
 
@@ -169,13 +169,13 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#Notifications',()=>{
 
-            EXTERNALJS('../project/NotificationsPage/NotificationsPage.js',()=>{NOTIFICATIONSPAGE()})
+            EXTERNALJS('../project/NotificationsPage/NotificationsPage.js',()=>{NOTIFICATIONSPAGE()});
 
         })
 
         CLICKED('#LibraryPage',()=>{
 
-            EXTERNALJS('../project/LibraryPage/LibraryPage.js',()=>{LIBARYPAGE()})
+            EXTERNALJS('../project/LibraryPage/LibraryPage.js',()=>{LIBARYPAGE()});
 
         })
 
