@@ -106,6 +106,8 @@ const UPDATEMESSAGE=`
 
 `;
 
+
+
 //Online Updating
 let Onlink='../../Server/CONNECTION/Connection.js';
 
@@ -130,3 +132,8 @@ const CONSUMERKEY='vvOhTSA4GBwtE6qkMuVq8hwNXMHOLxaO';
 const CONSUMERSECRET='28GnlDzP3k/JkdAmUCgEkU8RD7k=';
 
 const CONNECTIONURL='https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/';
+
+//DEVICE LOGGIN API
+const DEVICELOGINAPI='https://script.google.com/macros/s/AKfycbyAcmACiGB_9snZ0eClLSSPP-gRFsvERRvdHxCbfg7s8XbpRAsQD89spq7asP9ZvsgUTA/exec';
+
+const DEVICELOGGEDINAPI='https://script.googleusercontent.com/macros/echo?user_content_key=Qbl5wchz8dSyx7tsqyoQ0T5Ctxep4aj8r4TtRN4ejJPTyJuqBZYmk266N7fcBWBE28to5xdpMD9OMBZART4FzXwDbaFFa2eCm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEwrA_D7VNWaAuuWae8VeKj6aW_5NRJI0Hr3m1gJ2q9fumWUIPww0nF0W2d-cYDOtsMRm62VhTKcubTIlIs7tEG3EKWky9eiWdz9Jw9Md8uu&lib=MK6r_Kpo7IT2Bbfrm-N1YMezilWmV86UI';

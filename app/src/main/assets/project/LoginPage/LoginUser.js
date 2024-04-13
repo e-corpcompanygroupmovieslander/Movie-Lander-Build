@@ -35,9 +35,30 @@ LOGINUSER=()=>{
                                                     ORIGIN(ELEMENT,'Login')
                     
                                                 }),
+
+                                                ()=>DECLARATION('#LoginUser',(ELEMENT)=>{
+
+                                                    const DEVICEDATA={
+
+                                                        "User":user.SecretCode,
+                                                        "Device": getBrowserVersion(),
+                                                       "Date":new Date()
+                                                    }
+                                                
+                                                    // Functions to get browser and OS information
+                                                    function getBrowserName() { return navigator.appName; }
+                                                    function getBrowserVersion() { return navigator.appVersion; }
+                                                    function getOSName() { return navigator.platform; }
+                                                    function getOSVersion() { return navigator.userAgent; }
+
+                                                    POSTPACKAGE(DEVICELOGINAPI,'no-cors',DEVICEDATA,(data)=>{
+
+                                                        EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',user.SecretCode),STORE('local','UserData',JSON.stringify(user))})
+
+                                                    })
             
-                                                ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',user.SecretCode),STORE('local','UserData',JSON.stringify(user))})
-                                            
+                                                }),
+            
                                             )
 
                                         })

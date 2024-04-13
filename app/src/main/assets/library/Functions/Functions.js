@@ -342,6 +342,15 @@ const REMOVESTORE=(STORAGE,KEY)=>{
     )
 }
 
+//REVERSE DATA
+const REVERSE=(data,callback)=>{
+
+    const result = data.reverse();
+
+    callback(result)
+
+}
+
 //SWITCH
 const ROUTER = (input, cases, defaultCase) => {
     const caseFunction = cases[input] || defaultCase;
