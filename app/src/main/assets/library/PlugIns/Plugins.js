@@ -1,22 +1,3 @@
-//VIBRATION PLUGIN
-const VIBRATION=(TIME)=>{
-
-    CONDITION(localStorage.getItem('Device')==='Android',
-
-        ()=>CONDITION(localStorage.getItem('Environment')==='Production',
-
-            ()=>Android.vibrate(TIME),
-
-            ()=>navigator.vibrate(TIME)
-            
-        ),
-            
-        ()=>console.log('Vibration Is On',TIME)   
-
-    )
-
-}
-
 //NOTIFICATIONS PLUGIN
 const NOTIFICATIONS=(TITLE,MESSAGE)=>{
 
@@ -69,3 +50,23 @@ const SHOWNAVIGATIONBAR=()=>{
     ); 
 }
 
+//VIBRATION PLUGIN
+const VIBRATION=(TIME)=>{
+
+    
+    CONDITION(localStorage.getItem('Device')==='Android',
+
+        ()=>CONDITION(localStorage.getItem('Environment')==='Production',
+
+            ()=>Android.vibrate(TIME),
+
+            ()=>navigator.vibrate(TIME)
+            
+        ),
+            
+        ()=>console.log('Vibration Is On',TIME)   
+
+    )
+
+
+}
