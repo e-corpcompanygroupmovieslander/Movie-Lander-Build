@@ -2,6 +2,8 @@ LOGINEMAIL=()=>{
 
     DEJSON('local','VERIFIEDCODE',(data)=>{
 
+        const DATA=data;
+
         DISPLAY('',`
 
             <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
@@ -38,7 +40,7 @@ LOGINEMAIL=()=>{
         CLICKED('#ForgotPin',()=>{
 
             var EMAILDATA = {
-                recipientEmail: data.UserName,
+                recipientEmail: data.Email,
                 subject: "Movie Lander Login",
                 body: `Dear ${data.UserName},\n\nThank you for using our service. To complete your registration, please use the following verification code:\n\nVerification Code: ${data.SecretCode}\n\nThis code will expire in 30 minutes. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
             };
@@ -61,29 +63,37 @@ LOGINEMAIL=()=>{
 
         CLICKED('#Unlock',()=>{
 
-            DECLARATION('#Unlock',()=>{
+            DECLARATION('#Unlock',(ELEMENT)=>{
 
-                const PIN=document.querySelector('#Pin.value')
+                const PIN=document.querySelector('#Pin')
 
-                CONDITION( data.SecretCode === PIN.value,
+                CONDITION(PIN.value,
 
                     ()=>DECLARATION('#Unlock',(ELEMENT)=>{
 
-                        LOADER(ELEMENT);
+                        CONDITION(data.SecretCode === PIN.value,
 
-                        POSTPACKAGE(CREATEACCOUNTAPI,'no-cors',data,(data)=>{
+                            ()=>DECLARATION('#Unlock',(DES)=>{
+        
+                                LOADER(ELEMENT);
 
-                            GETPACKAGE(LOGINAPI,'cors',(data)=>{
+                                GETPACKAGE(LOGINAPI,'cors',(user)=>{
 
-                                FINDER(data,'Email',USEREMAIL.value,(user)=>{
+                                    CONDITION( user.Email ===  data.Email ,
 
-                                    CONDITION(user.Email === USEREMAIL.value ,
+                                        ()=>DECLARATION('#Unlock',(ELEMENT)=>{
+        
+                                            MESSAGE('Email Taken ')
 
-                                        ()=>CHECK(user,(result)=>{
-    
+                                            ORIGIN(ELEMENT,'Verify')
+                    
+                                        }),
+
+                                        ()=>POSTPACKAGE(CREATEACCOUNTAPI,'no-cors',DATA,(users)=>{
+
                                             const DEVICEDATA={
-    
-                                                "User":user.SecretCode,
+
+                                                "User":DATA.SecretCode,
                                                 "Device": getBrowserVersion(),
                                                "Date":new Date()
                                             }
@@ -93,40 +103,36 @@ LOGINEMAIL=()=>{
                                             function getBrowserVersion() { return navigator.appVersion; }
                                             function getOSName() { return navigator.platform; }
                                             function getOSVersion() { return navigator.userAgent; }
-    
+
                                             POSTPACKAGE(DEVICELOGINAPI,'no-cors',DEVICEDATA,(data)=>{
 
-                                                REMOVESTORE('','FromApp');
-    
-                                                REMOVESTORE('local','VERIFIEDCODE');
-    
-                                                EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',user.SecretCode),STORE('local','UserData',JSON.stringify(user))})
-    
-                                            })
-                                            
-                                        }),
+                                                EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE(),STORE('local','User',DATA.SecretCode),STORE('local','UserData',JSON.stringify(DATA)),REMOVESTORE('local','VERIFIEDCODE')})
 
-                                        ()=>CHECK(data,(result)=>{
-                                            MESSAGE('Something Went Wrong')
-                                            ORIGIN(ELEMENT,'Create Account')
+                                            })
+
                                         })
                                     
                                     )
 
                                 })
-
+        
+                            }),
+        
+                            ()=>DECLARATION('#Unlock',(ELEMENT)=>{
+        
+                                MESSAGE('Wrong Verification Code ')
+        
                             })
-                            
-                        })
-                    
+                        
+                        )
+
                     }),
 
                     ()=>DECLARATION('#Unlock',(ELEMENT)=>{
 
-                        MESSAGE('Wrong Code')
+                        MESSAGE('Enter Verification Code ')
 
                     })
-                
                 
                 )
 

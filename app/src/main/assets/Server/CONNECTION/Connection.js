@@ -2,6 +2,7 @@ import { BUSINESSTOOL } from "../FUNCTIONS/BusinessTools/BusinessTools.js"
 import { COMMUNITY } from "../FUNCTIONS/Community/Community.js"
 import { NOTIFICATIONS } from "../FUNCTIONS/Notifications/Notifications.js"
 import { USERSETTINGSACCOUNTPAGEPREMIUM } from "../PAGES/AccountsSettingsPage/PremiumAccountPage.js"
+import { AUTOACCOUNTUPDATING } from "../PAGES/AutoAccountUpdating/AutoAccountUpdating.js"
 import { AUTODELETEACCOUNT } from "../PAGES/AutoDeleteAccount/AutoDeleteAccount.js"
 import { AUTODEVICE } from "../PAGES/AutoDevice/AutoDevice.js"
 import { HOMEPAGE } from "../PAGES/HomePage/HomePage.js"
@@ -12,13 +13,13 @@ import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
 const CONNECTION=()=>{
 
-    NOTIFICATIONS('Movie Lander','Welcome ')
-
     AUTODEVICE();
 
     AUTOPREMIUMUSER();
 
     AUTODELETEACCOUNT();
+
+    AUTOACCOUNTUPDATING();
 
     const CASES={
         "HomePage":()=>{
