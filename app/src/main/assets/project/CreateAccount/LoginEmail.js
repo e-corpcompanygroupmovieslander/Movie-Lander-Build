@@ -27,13 +27,7 @@ LOGINEMAIL=()=>{
 
             REMOVESTORE('local','VERIFIEDCODE');
 
-            CONDITION(sessionStorage.getItem('FromApp') === 'Direct' ,
-
-                ()=>EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()}),
-
-                ()=>EXTERNALJS('../project/CreateAccount/CreateAccountPage.js',()=>{CREATEACCOUNTPAGE()})
-        
-            )
+            EXTERNALJS('../project/CreateAccount/CreateAccountPage.js',()=>{CREATEACCOUNTPAGE()})
 
         })
 
@@ -52,9 +46,9 @@ LOGINEMAIL=()=>{
                 POSTPACKAGE(EMAILSENDERAPI,'no-cors',EMAILDATA,(data)=>{
 
                     MESSAGE('Code Sent To Email');
-    
-                    EXTERNALJS('../project/CreateAccount/LoginEmail.js',()=>{LOGINEMAIL()})
-    
+
+                    ORIGIN(ELEMENT,'Resend Code?');
+
                 })
                 
             })
