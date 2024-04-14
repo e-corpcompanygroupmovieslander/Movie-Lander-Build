@@ -12,7 +12,7 @@ import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
 const CONNECTION=()=>{
 
-    NOTIFICATIONS('hello','Fine');
+    NOTIFICATIONS('Movie Lander','Welcome ')
 
     AUTODEVICE();
 
