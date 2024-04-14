@@ -1,10 +1,22 @@
+//CONTACT PLUGIN
+const CONTACTS=(callback)=>{
+
+     // Call the getContacts() method from the WebAppInterface
+     var contactsJson = Android.getContacts();
+
+     // Parse the JSON string into JavaScript object
+     var contacts = JSON.parse(contactsJson);
+
+     // Call the callback function with contacts data
+     callback(contacts);
+
+}
+
 //NOTIFICATIONS PLUGIN
 const NOTIFICATIONS=(TITLE,MESSAGE)=>{
 
     if (localStorage.getItem('Environment')==='Production') {
-
-        VIBRATION(500)
-           
+   
         Android.showNotification(`${TITLE}`, `${MESSAGE}`);
 
     } else {
@@ -20,8 +32,6 @@ const NOTIFICATIONS=(TITLE,MESSAGE)=>{
                 body: MESSAGE,
                 icon: "/app/src/main/res/drawable/app_icon.png"
                 };
-
-                VIBRATION(500)
 
                 var notification = new Notification(TITLE, options);    
             }
@@ -52,21 +62,13 @@ const SHOWNAVIGATIONBAR=()=>{
 
 //VIBRATION PLUGIN
 const VIBRATION=(TIME)=>{
-
     
-    CONDITION(localStorage.getItem('Device')==='Android',
+    CONDITION(localStorage.getItem('Environment')==='Production',
 
-        ()=>CONDITION(localStorage.getItem('Environment')==='Production',
-
-            ()=>Android.vibrate(TIME),
-
-            ()=>navigator.vibrate(TIME)
-            
-        ),
+        ()=>Android.vibrate(TIME),
             
         ()=>console.log('Vibration Is On',TIME)   
 
     )
-
 
 }

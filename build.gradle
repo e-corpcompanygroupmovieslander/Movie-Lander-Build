@@ -1,11 +1,48 @@
-//list of plugins that may be required for sub-projects
+// List of plugins that may be required for sub-projects
 plugins {
     id 'com.android.application' version '7.2.0' apply false
     id 'com.android.library' version '7.2.0' apply false
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
 
-//gradle task to clean the build directory
+// Gradle task to clean the build directory
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Task to write data to a JavaScript file for clean
+task writeDataToJSClean {
+    doLast {
+        // Data for clean process
+        def cleanData = "ENVIRONMENT('Test');"
+
+        // Specify the path to the JS file for clean
+        def jsFile = file('/app/src/main/assets/library/Environment/Environment.js')
+
+        // Write data to the JS file for clean
+        jsFile.text = cleanData
+    }
+}
+
+// Task to write data to a JavaScript file for build
+task writeDataToJSBuild {
+    doLast {
+        // Data for build process
+        def buildData = "ENVIRONMENT('');"
+
+        // Specify the path to the JS file for build
+        def jsFile = file('/app/src/main/assets/library/Environment/Environment.js')
+
+        // Write data to the JS file for build
+        jsFile.text = buildData
+    }
+}
+
+// Define the preBuild property
+ext.preBuild = tasks.getByPath(':app:preBuild')
+
+// Execute writeDataToJSClean task before clean
+clean.dependsOn writeDataToJSClean
+
+// Execute writeDataToJSBuild task before each build
+preBuild.dependsOn writeDataToJSBuild

@@ -8,12 +8,14 @@ public class WebAppInterface {
     private NotificationInterface notificationInterface;
     private NavigationBarHider navigationBarHider;
     private NavigationBarShower navigationBarShower;
+    private ContactsInterface contactsInterface;
 
     public WebAppInterface(Context context) {
         vibrationInterface = new VibrationInterface(context);
         notificationInterface = new NotificationInterface(context);
         navigationBarHider = new NavigationBarHider((MainActivity) context); 
         navigationBarShower = new NavigationBarShower((MainActivity) context); 
+        contactsInterface = new ContactsInterface(context);
     }
 
     @JavascriptInterface
@@ -34,5 +36,10 @@ public class WebAppInterface {
     @JavascriptInterface
     public void showNavigationBar() {
         navigationBarShower.showNavigationBar();
+    }
+
+    @JavascriptInterface
+    public String getContacts() {
+        return contactsInterface.getContacts();
     }
 }
