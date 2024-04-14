@@ -22,7 +22,7 @@ const UPDATEAPI=`https://play.google.com/store/apps/details?id=com.ecorpcompanyg
 
 const PRIVACYTEXT=`https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/DOCUMENTS/PrivacyPolicyPage/PrivacyPolicy.txt`;
 
-const PARENTALCONTROLTEXT=`https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/DOCUMENTS/ParentalControl/ParentalControl.txt`;
+const PARENTALCONTROLTEXT=`https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/DOCUMENTS/PrivacyPolicyPage/PrivacyPolicy.txt`;
 
 const MOREAPPSAPI=`https://script.googleusercontent.com/macros/echo?user_content_key=LKxwjuinC5ZmWbRncQj0nUwSwXKADTwv5xGfCCv3Tg7LguXyGjMS02QaDDfTOhCeQu5JNm8NUZSWOCRelh4h8pINjcWXmdUmm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJAxInbGJwPEjZhGCuKhxCZeYLuntfgTpdBTwLd_e6uNDKcc-yF7VHtFnbexc1gXm5RC18NrtK2yu7TVI5lklsMMPmtozgPBbNz9Jw9Md8uu&lib=MzcnxIwsQ0SlCWA4i-RzuSuzilWmV86UI`;
 
