@@ -54,7 +54,10 @@ const AUTODEVICE=()=>{
 
                 CONDITION(user.Device === getBrowserVersion(),
             
-                    ()=>console.log('Same Device'),
+                    ()=>CHECK(getBrowserVersion(),(result)=>{
+                        REMOVESTORE('','list');
+                        REMOVESTORE('','wordList');
+                    }),
 
                     ()=>CHECK(getBrowserVersion(),(result)=>{
 
@@ -163,11 +166,10 @@ const AUTODEVICE=()=>{
 
                                     }),
                 
-                                    ()=>console.log('Waiting For Major Update')
+                                    ()=>console.log('Still Device')
                                 
                                 )
                 
-                                console.log(data)
                             })
 
                         })
