@@ -32,7 +32,7 @@ SETTINGSPAGE=()=>{
 
                 <h1 class='Buttontitle'>Parental Control</h1>
 
-                <img class='ButtonIcon' src='../library/Assets/icon/parentalcontrol.png'/>
+                <img class='ButtonIcon' src='../library/Assets/icon/caution.png'/>
             
             </button>
 

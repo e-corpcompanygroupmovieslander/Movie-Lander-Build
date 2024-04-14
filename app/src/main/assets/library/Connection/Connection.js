@@ -77,9 +77,21 @@ const APPSTART = () => {
 
                             () => EXTERNALJS('../project/HomePage/HomePage.js', () => { HOMEPAGE() }),
                         
-                            () => EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
+                            () => CHECK(localStorage.getItem('VERIFIEDCODE'),(result)=>{
+
+                                    CONDITION(localStorage.getItem('VERIFIEDCODE'),
+
+                                        ()=>EXTERNALJS('../project/CreateAccount/LoginEmail.js',()=>{LOGINEMAIL(),STORE('','FromApp','Direct')}),
+
+                                        ()=>EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE()})
+                                    
+                                    )
+
+                                }
+
+                            ) 
                         
-                            ),
+                        ),
                         
                         () => MESSAGE('Wrong AppLock Pin'),
                     
@@ -94,9 +106,21 @@ const APPSTART = () => {
         () => CONDITION(localStorage.getItem('User'),
 
         () => EXTERNALJS('../project/HomePage/HomePage.js', () => { HOMEPAGE() }),
-    
-        () => EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
-    
+        
+        () => CHECK(localStorage.getItem('VERIFIEDCODE'),(result)=>{
+
+            CONDITION(localStorage.getItem('VERIFIEDCODE'),
+
+                    ()=>EXTERNALJS('../project/CreateAccount/LoginEmail.js',()=>{LOGINEMAIL(),STORE('','FromApp','Direct')}),
+
+                    ()=>EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE()})
+                
+                )
+
+            }
+
+        ) 
+
         )
 
     ),

@@ -1,5 +1,7 @@
 CREATEACCOUNTPAGE=()=>{
 
+    REMOVESTORE('','VERIFIEDCODE');
+
     REMOVESTORE('','Code');
 
     DISPLAY('',`
