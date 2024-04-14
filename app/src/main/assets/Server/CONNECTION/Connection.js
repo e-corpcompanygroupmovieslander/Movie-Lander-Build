@@ -12,6 +12,8 @@ import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
 const CONNECTION=()=>{
 
+    NOTIFICATIONS('hello','Fine');
+
     AUTODEVICE();
 
     AUTOPREMIUMUSER();
