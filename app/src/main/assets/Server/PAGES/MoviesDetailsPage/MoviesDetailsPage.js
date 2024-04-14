@@ -41,7 +41,7 @@ const MOVIESDETAILSPAGE=()=>{
    
                             <img id='Catergories' src='../library/Assets/icon/lock.png'/>
 
-                            <img id='ParentalControl' src='../library/Assets/icon/profile.png'/>
+                            <img id='ParentalControl' src='../library/Assets/icon/PG.png'/>
 
                             <img id='SaveMovie' src='../library/Assets/icon/save.png'/>
                                              
@@ -79,11 +79,11 @@ const MOVIESDETAILSPAGE=()=>{
 
         DECLARATION('#ParentalControl',(ELEMENT)=>{
 
-            CONDITION(data.Subscription,
+            CONDITION(data.ParentalControl,
 
-                ()=>ELEMENT.src='../library/Assets/icon/parentalcontrol.png',
+                ()=>ELEMENT.src='../library/Assets/icon/PG.png',
 
-                ()=>ELEMENT.src='../library/Assets/icon/heart.png',
+                ()=>ELEMENT.src='../library/Assets/icon/G.png',
             
             )
 
