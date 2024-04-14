@@ -42,7 +42,7 @@ const DELETEACCOUNTGET=`https://script.googleusercontent.com/macros/echo?user_co
 
 const DELETEACCOUNTPOST=`https://script.google.com/macros/s/AKfycbwRRo-VKbYeqFyjsq3kLRc4lgNbq8D8OFn9M1LPtQr_5RsD31yKtkkPg1EbkvfYyo5g/exec`;
 
-const DELETEACCOUNTPOLICY=`https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/DOCUMENTS/AccountDeletion/Accountdeletion.txt`;
+const DELETEACCOUNTPOLICY=`https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/DOCUMENTS/AccountDeletion/Accountdeletion.txt`;
 
 const MOVIIEREQUESTAPI=`https://script.google.com/macros/s/AKfycbxSMyblhcQKYRvLsPCy5f1raiwW_nNQlkeveIxspjkWF3odNlyVsVevQ1ErqiJRQJtO/exec`;
 
