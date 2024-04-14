@@ -71,29 +71,38 @@ FORGOTPASSWORDPAGE=()=>{
 
                                                         ()=>CHECK(user,(result)=>{
 
-                                                            DISPLAY('',`
+                                                            var EMAILDATA = {
+                                                                recipientEmail: user.Email,
+                                                                subject: "Movie Lander Password Recovery",
+                                                                body: `Dear ${user.UserName},\n\nThank you for using Movie Lander. To complete your Login Into Your Account, Your Account Password Is:\n\nPassword: ${user.Password}\n\nOpen Movie Lander And Login Using Your Password Above .\n Don't Share Your Password. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
+                                                            };
+                                                
+                                                            POSTPACKAGE(EMAILSENDERAPI,'no-cors',EMAILDATA,(data)=>{
+                                                
+                                                                DISPLAY('',`
 
-                                                            <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
-
-
-                                                            <h1>User Password</h1>
-
-                                                            <h1>${user.Password}</h1>
-
-                                                            <button class='Login'>Back</button>   
-                                                        
-                                                            `)
-
-                                                            DECLARATION('.Login',(ELEMENT)=>{
-
-                                                                EVENT(ELEMENT,'click',()=>{
-                                                        
-                                                                    EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
-                                                        
+                                                                <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
+       
+                                                                <h3>Password Recovery </h3>
+    
+                                                                <p> Your Password Was  Sent To <br><br> ${user.Email}</p>
+    
+                                                                <button class='Login'>Back</button>   
+                                                            
+                                                                `)
+    
+                                                                DECLARATION('.Login',(ELEMENT)=>{
+    
+                                                                    EVENT(ELEMENT,'click',()=>{
+                                                            
+                                                                        EXTERNALJS('../project/LoginPage/loginPage.js', () => { LOGINPAGE() })
+                                                            
+                                                                    })
+                                                            
                                                                 })
-                                                        
+                                                
                                                             })
-
+                                                                
                                                         }),
             
                                                         ()=>CHECK(data,(result)=>{

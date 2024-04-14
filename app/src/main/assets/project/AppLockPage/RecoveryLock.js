@@ -71,27 +71,36 @@ LOCKRECOVERY=()=>{
 
                                                         ()=>CHECK(user,(result)=>{
 
-                                                            DISPLAY('',`
+                                                            var EMAILDATA = {
+                                                                recipientEmail: user.Email,
+                                                                subject: "Movie Lander AppLock Recovery",
+                                                                body: `Dear ${user.UserName},\n\nThank you for using Movie Lander. To Access Your Account, Your App Lock Pin Is:\n\nPin: ${localStorage.getItem('AppLock')}\n\nOpen Movie Lander And Enter The App Lock Pin Above .\n Don't Share Your App Lock Pin. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
+                                                            };
 
-                                                            <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
+                                                            POSTPACKAGE(EMAILSENDERAPI,'no-cors',EMAILDATA,(data)=>{
+                                                
+                                                                DISPLAY('',`
 
+                                                                <img class='AppLogo' src='../library/Assets/images/playstore.png'/>
+       
+                                                                <h3>App Lock Pin Recovery </h3>
+    
+                                                                <p> Your AppLock Pin Was  Sent To <br><br> ${user.Email}</p>
+    
+                                                                <button class='Login'>Back</button>   
+                                                            
+                                                                `);
 
-                                                            <h1>User App Lock Pin</h1>
+                                                                DECLARATION('.Login',(ELEMENT)=>{
 
-                                                            <h1>${localStorage.getItem('AppLock')}</h1>
-
-                                                            <button class='Login'>Back</button>   
-                                                        
-                                                            `)
-
-                                                            DECLARATION('.Login',(ELEMENT)=>{
-
-                                                                EVENT(ELEMENT,'click',()=>{
-                                                        
-                                                                    APPSTART()
-                                                        
+                                                                    EVENT(ELEMENT,'click',()=>{
+                                                            
+                                                                        APPSTART()
+                                                            
+                                                                    })
+                                                            
                                                                 })
-                                                        
+
                                                             })
 
                                                         }),
@@ -102,7 +111,7 @@ LOCKRECOVERY=()=>{
                                                         })
                                                         
                                                     )
-            ,
+                                                    ,
         
                                                     ()=>CHECK(data,(result)=>{
                                                         MESSAGE('Wrong User Location')

@@ -93,7 +93,7 @@ CREATEUSERACCOUNT=()=>{
                                                         var EMAILDATA = {
                                                             recipientEmail: USEREMAIL.value ,
                                                             subject: "Movie Lander Login",
-                                                            body: `Dear ${USERNAME.value},\n\nThank you for using our service. To complete your registration, please use the following verification code:\n\nVerification Code: ${secretCode}\n\nThis code will expire in 30 minutes. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
+                                                            body: `Dear ${USERNAME.value},\n\nThank you for using Movie Lander. To complete your registration, please use the following verification code:\n\nVerification Code: ${secretCode}\n\nThis code will expire in 30 minutes. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
                                                         };
                                                         
 

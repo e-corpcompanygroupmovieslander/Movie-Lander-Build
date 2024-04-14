@@ -36,7 +36,7 @@ LOGINEMAIL=()=>{
             var EMAILDATA = {
                 recipientEmail: data.Email,
                 subject: "Movie Lander Login",
-                body: `Dear ${data.UserName},\n\nThank you for using our service. To complete your registration, please use the following verification code:\n\nVerification Code: ${data.SecretCode}\n\nThis code will expire in 30 minutes. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
+                body: `Dear ${data.UserName},\n\nThank you for using Movie Lander. To complete your registration, please use the following verification code:\n\nVerification Code: ${data.SecretCode}\n\nThis code will expire in 30 minutes. If you did not request this code, please ignore this email.\n\nBest regards, Movie Lander Team\n${WebsiteContact}`
             };
 
             DECLARATION('#ForgotPin',(ELEMENT)=>{
