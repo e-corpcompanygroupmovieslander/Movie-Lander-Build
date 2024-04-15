@@ -40,8 +40,18 @@ HOMEPAGE=()=>{
 
     })
 
-    STORE('','Updates','HomePage');
+    GETPACKAGE(HOMEPAGEAPI,'cors',(data)=>{
 
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()});
+        DECLARATION('#HomeDiv',(ELEMENT)=>{
+
+            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+
+            DISPLAY(ELEMENT,data)
+
+        })
+
+    })
+
+    STORE('','Updates','HomePage');
 
 }
