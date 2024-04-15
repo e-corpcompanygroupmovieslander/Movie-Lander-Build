@@ -2,6 +2,6 @@
 
 <resources>
 
-    <integer name="compile_sdk_version">32</integer>
+    <integer name="compile_sdk_version">33</integer>
     
 </resources>

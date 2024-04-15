@@ -7,3 +7,10 @@
 # ADVANCE-NATIVE IS A CORE PACKAGE OF BUILDING TOOLS USE TO DEVELOP NATIVE ANDROID APPS THATS ARE FAST AND FULLY FUNCTIONG.
 
 # https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/app/api.js
+
+# keytool -importcert -file '/app/keys/deployment_cert (2).der' -alias Movie_Lander -keystore '/app/keys/movie-lander.jks'
+
+
+# $ java -jar pepk.jar --keystore=Movie-Lander --alias=Movie-Lander --output=/  --signing-keystore=NagamiAndrew --signing-key-alias=upload-key-alias --rsa-aes-encryption --encryption-key-path=encryption_public_key.pem
+
+
