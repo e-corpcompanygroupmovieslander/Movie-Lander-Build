@@ -15,3 +15,11 @@ DISPLAY('',`
 </div>
 
 `)
+
+DECLARATION('#PolicyDataDiv',(ELEMENT)=>{
+
+    GETPACKAGE(PRIVACYTEXT,'cors',(data)=>{
+        DISPLAY(ELEMENT,data)
+    })
+
+})
