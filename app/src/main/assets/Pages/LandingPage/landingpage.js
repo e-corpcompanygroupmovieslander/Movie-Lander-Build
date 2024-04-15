@@ -28,7 +28,7 @@ DISPLAY('',`
 
         <div id='ImageHolder' class='View'>
             
-            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.03.47.jpeg'/>
+            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.25.12.jpeg'/>
 
         </div>
 
@@ -40,13 +40,13 @@ DISPLAY('',`
 
         <div id='ImageHolder' class='View'>
             
-            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.03.21.jpeg'/>
+            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.21.54.jpeg'/>
 
         </div>
 
         <div id='ImageHolder' class='View'>
         
-            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.03.47.jpeg'/>
+            <img  class='inAppImages' src='../../library/Assets/images/landingpage/WhatsApp Image 2024-04-15 at 16.22.29.jpeg'/>
 
         </div>
 
