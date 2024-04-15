@@ -31,3 +31,12 @@ body{
     left: 0.5%;
     border-radius: 10px;
 }
+
+#Modeicon{
+    background: #dcdcdc80;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 2%;
+    border-radius: 50px;
+}

@@ -10,6 +10,8 @@ DISPLAY('',`
 
 <div id='PolicyDataDiv' class='ScrollView'>
 
+    <img id='Modeicon' class='BackIcon' src='../../library/Assets/icon/moon.png'/>
+
     <img  class='AppLogo' src='../../library/Assets/images/playstore.png'/>
 
     <div class='ViewHolder'>
@@ -61,3 +63,17 @@ DISPLAY('',`
 </div>
 
 `)
+
+APPMODE('','','#121212')
+
+CLICKED('#Modeicon',()=>{
+
+    CONDITION(localStorage.getItem('AppColour') === '#121212' ,
+
+        ()=>APPMODE('','','#5C829A'),
+
+        ()=>APPMODE('','','#121212')
+
+    )
+    
+})
