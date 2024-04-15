@@ -53,7 +53,13 @@ const MOVIEREQUESTPAGE=()=>{
 
                         DECLARATION('.mytitle',(TITLE)=>{
 
-                            STYLED(TITLE,'color','blue')
+                            STYLED(TITLE,'color','teal')
+
+                            DECLARATION('.MyData',(TITLE)=>{
+
+                                STYLED(TITLE,'color','teal')
+    
+                            })
 
                         })
 
