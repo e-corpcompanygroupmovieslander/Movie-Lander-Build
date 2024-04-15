@@ -4,6 +4,6 @@
     <integer name="version_code">1</integer>
 
     <!-- Define the version name -->
-    <string name="version_name">0.1</string>
+    <string name="version_name">0.0.1</string>
 
 </resources>
