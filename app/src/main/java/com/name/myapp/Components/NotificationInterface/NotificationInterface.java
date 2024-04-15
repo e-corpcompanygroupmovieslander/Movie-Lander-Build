@@ -1,4 +1,4 @@
-package com.movie_lander;
+package com.ecorpcompanygroup.movie_lander;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

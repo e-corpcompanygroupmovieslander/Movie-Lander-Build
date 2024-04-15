@@ -1,4 +1,4 @@
-package com.movie_lander;
+package com.ecorpcompanygroup.movie_lander;
 
 import android.Manifest;
 import android.app.Activity;
