@@ -29,7 +29,7 @@ const MOVIEREQUESTPAGE=()=>{
 
     DECLARATION('#DeleteAccountPolicy',(ELEMENT)=>{
 
-        GETPACKAGE(MOVIIEREQUESTAPI,'cors',(data)=>{
+        GETPACKAGE(MOVIIEREQUESTEDAPI,'cors',(data)=>{
 
             DISPLAY(ELEMENT,'');
 
@@ -97,11 +97,15 @@ const MOVIEREQUESTPAGE=()=>{
                             "Date":new Date()
                         }
     
-                        POSTPACKAGE(MOVIIEREQUESTEDAPI,'no-cors',DATA,(data)=>{
+                        POSTPACKAGE(MOVIIEREQUESTAPI,'no-cors',DATA,(data)=>{
 
                             DECLARATION('#DeleteAccountPolicy',(ELEMENT)=>{
 
                                 GETPACKAGE(MOVIIEREQUESTAPI,'cors',(data)=>{
+
+                                    DECLARATION('.DeleteButton',(ELEMENT)=>{
+                                        ORIGIN(ELEMENT,'Request');
+                                    })
                         
                                     DISPLAY(ELEMENT,'');
                         
