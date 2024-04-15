@@ -54,9 +54,24 @@ DISPLAY('',`
 
     </div>
 
-    <h2>Get The Latest Cinema Experience </h2>
+    <br><br>
 
-    <button>Download</button>
+    <button id='Market' class='Button'>
+
+        <h1 class='Buttontitle'>Download From PlayStore</h1>
+
+        <img class='ButtonIcon' src='../../library/Assets/icon/playstore.png'/>
+        
+    </button>
+
+    <button id='Market' class='Button'>
+
+        <h1 class='Buttontitle'>Download Apk</h1>
+
+        <img class='ButtonIcon' src='../../library/Assets/icon/app.png'/>
+        
+    </button>
+
 
     
 
