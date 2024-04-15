@@ -1,4 +1,4 @@
-package com.ecorpcompanygroup.movie_lander;
+package com.movielander;
 
 import android.content.Intent;
 import android.net.Uri;
