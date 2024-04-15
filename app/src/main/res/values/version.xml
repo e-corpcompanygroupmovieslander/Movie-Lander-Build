@@ -1,9 +1,9 @@
 <resources>
 
     <!-- Define the version code -->
-    <integer name="version_code">8</integer>
+    <integer name="version_code">1</integer>
 
     <!-- Define the version name -->
-    <string name="version_name">8.1</string>
+    <string name="version_name">0.0.1</string>
 
 </resources>

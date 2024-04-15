@@ -89,7 +89,7 @@ const USDYEARLY='100';
 
 //APPVERSION
 const VERSIONSTATUS='Minor';
-const APPVERSION='8.1';
+const APPVERSION='0.0.1';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
