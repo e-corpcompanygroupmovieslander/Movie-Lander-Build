@@ -10,7 +10,7 @@ DISPLAY('',`
 
 <div id='PolicyDataDiv' class='ScrollView'>
 
-    <img id='Modeicon' class='BackIcon' src='../../library/Assets/icon/moon.png'/>
+    <img id='Modeicon' class='BackIcon' src='../../library/Assets/icon/brightness-and-contrast.png'/>
 
     <img  class='AppLogo' src='../../library/Assets/images/playstore.png'/>
 
