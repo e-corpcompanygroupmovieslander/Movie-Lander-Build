@@ -1,6 +1,6 @@
 DISPLAY('',`
 
-<header>
+<header class='AppHeader'>
 
     <img id='AppimageSection' class='BackIcon' src='../../library/Assets/images/playstore.png'/>
 
