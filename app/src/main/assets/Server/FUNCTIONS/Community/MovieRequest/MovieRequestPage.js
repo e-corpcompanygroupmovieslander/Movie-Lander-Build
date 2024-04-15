@@ -86,20 +86,67 @@ const MOVIEREQUESTPAGE=()=>{
 
                 DECLARATION('.DeleteButton',(ELEMENT)=>{
 
-                    LOADER(ELEMENT);
+                    DEJSON('local','UserData',(data)=>{
 
-                    const DATA={
-                        "User":data.SecretCode,
-                        "Message":DELETEINPUT.value,
-                        "Terms":"ON",
-                        "Date":new Date()
-                    }
+                        LOADER(ELEMENT);
 
-                    POSTPACKAGE(DELETEACCOUNTPOST,'cors',DATA,(data)=>{
+                        const DATA={
+                            "Movie": localStorage.getItem('User'),
+                            "Commentor":data.UserName,
+                            "Comment":DELETEINPUT.value,
+                            "Date":new Date()
+                        }
+    
+                        POSTPACKAGE(MOVIIEREQUESTEDAPI,'no-cors',DATA,(data)=>{
 
-                        REMOVESTORE('local','User');REMOVESTORE('local','UserData');
+                            DECLARATION('#DeleteAccountPolicy',(ELEMENT)=>{
 
-                        EXTERNALJS('../project/LoginPage/loginPage.js',()=>{LOGINPAGE()})
+                                GETPACKAGE(MOVIIEREQUESTAPI,'cors',(data)=>{
+                        
+                                    DISPLAY(ELEMENT,'');
+                        
+                                    REDUX(data,(element)=>{
+                        
+                                        CREATEELEMENT('button','MyDataButton',(button)=>{
+                        
+                                            DISPLAY(button,`
+                        
+                                                <h1 class='mytitle'>${element.Commentor}</h1>
+                        
+                                                <img class='myIcon' src='../library/Assets/icon/user.png'/>
+                                            
+                                                <h1 class='MyData'>${element.Comment}</h1>
+                                            
+                                            `)
+                        
+                                            ADD(ELEMENT,button)
+                        
+                                            CHECK(element.Commentor === 'Admin',(result)=>{
+                        
+                                                DECLARATION('.mytitle',(TITLE)=>{
+                        
+                                                    STYLED(TITLE,'color','blue')
+                        
+                                                })
+                        
+                                                DECLARATION('.myIcon',(TITLE)=>{
+                        
+                                                    TITLE.src='../library/Assets/icon/profile.png'
+                        
+                                                })
+                        
+                                            } )
+                        
+                                        })
+                        
+                                    })
+                                    
+                        
+                                })
+                        
+                            })
+
+                        })
 
                     })
 
