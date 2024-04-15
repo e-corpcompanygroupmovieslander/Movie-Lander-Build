@@ -1,4 +1,4 @@
-package com.movielander;
+package com.movie_lander;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;

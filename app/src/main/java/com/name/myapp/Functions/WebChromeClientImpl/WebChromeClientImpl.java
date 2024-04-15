@@ -1,4 +1,4 @@
-package com.movielander;
+package com.movie_lander;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
