@@ -1,4 +1,4 @@
-package com.ecorpcompanygroup.movie_lander;
+package com.movie_lander;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

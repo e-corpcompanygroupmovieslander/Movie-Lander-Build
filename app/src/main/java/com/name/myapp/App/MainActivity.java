@@ -1,4 +1,4 @@
-package com.ecorpcompanygroup.movie_lander;
+package com.movie_lander;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
