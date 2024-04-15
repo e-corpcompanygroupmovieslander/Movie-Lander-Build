@@ -1,1 +1,1 @@
-ENVIRONMENT('Test');
+ENVIRONMENT('');

@@ -11,140 +11,284 @@ import { LATESTROMANCE } from "../LatestRomance/LatestRomance.js";
 
 const HOMEPAGE=()=>{
 
-    LATESTANIMATION();
+    DECLARATION('#HomeDiv',(ELEMENT)=>{
 
-    HOMEANIMATION();
+        DISPLAY(ELEMENT,`
 
-    HOMEMOVIES();
+            <div id='LatestAnimation' class='View'>
 
-    LATESTMOVIES();
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
 
-    HOMEMARATHONS();
+            <div id='homeHolder' class='View'>
 
-    HOMESERIES();
+                <header class='AppHeader'>
 
-    LATESTNIGERIAN();
+                    <h1 class='SectionName' >Animations</h1>
 
-    HOMEADVENTURE();
+                    <img id='MoreAnimations' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
 
-    HOMEHORROR();
+                <div id='Animations' class='View'>
 
-    LATESTROMANCE();
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+            
+            </div>
 
-    CLICKED('#MoreAnimations',()=>{
+            <div id='homeHolder' class='View'>
 
-        const DATA={
-            "Sections":"Animations",
-            "link":ANIMATIONAPI,
-        }
+                <header class='AppHeader'>
 
-        JSONIFICATION(DATA,(data)=>{
+                    <h1 class='SectionName' >Action</h1>
 
-            STORE('','Path','SeeMore')
+                    <img id='MoreMovies' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
 
-            STORE('','MoviesData',data);
+                <div id='Movies' class='View'>
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+            
+            </div>
+
+            <div id='LatestMovies' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
+
+            <div id='homeHolder' class='View'>
+
+                <header class='AppHeader'>
+
+                    <h1 class='SectionName' >Marathons</h1>
+
+                    <img id='MoreMarathons' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
+
+                <div id='Marathons' class='View'>
+
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+            
+            </div>
+
+            <div id='homeHolder' class='View'>
+
+                <header class='AppHeader'>
+
+                    <h1 class='SectionName' >Series</h1>
+
+                    <img id='MoreSeries' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
+
+                <div id='Series' class='View'>
+
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+
+            </div>
+
+            <div id='LatestNigerian' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
+
+            <div id='homeHolder' class='View'>
+
+                <header class='AppHeader'>
+
+                    <h1 class='SectionName' >Adventure</h1>
+
+                    <img id='MoreAdventure' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
+
+                <div id='Adventure' class='View'>
+
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+
+            </div>
+
+            <div id='homeHolder' class='View'>
+
+                <header class='AppHeader'>
+
+                    <h1 class='SectionName' >Horror</h1>
+
+                    <img id='MoreHorror' class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
+                
+                </header>
+
+                <div id='Horror' class='View'>
+
+                    <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+                </div>
+
+            </div>
+
+            <div id='LatestRomance' class='View'>
+
+                <img id='AnimationsLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            </div>
+
+            <br><br><br>
+
+        `)
+
+        LATESTANIMATION();
+
+        HOMEANIMATION();
+
+        HOMEMOVIES();
+
+        LATESTMOVIES();
+
+        HOMEMARATHONS();
+
+        HOMESERIES();
+
+        LATESTNIGERIAN();
+
+        HOMEADVENTURE();
+
+        HOMEHORROR();
+
+        LATESTROMANCE();
+
+        CLICKED('#MoreAnimations',()=>{
+
+            const DATA={
+                "Sections":"Animations",
+                "link":ANIMATIONAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
 
         })
 
-    })
+        CLICKED('#MoreMovies',()=>{
 
-    CLICKED('#MoreMovies',()=>{
+            const DATA={
+                "Sections":"Action",
+                "link":MOVIESAPI,
+            }
 
-        const DATA={
-            "Sections":"Action",
-            "link":MOVIESAPI,
-        }
+            JSONIFICATION(DATA,(data)=>{
 
-        JSONIFICATION(DATA,(data)=>{
+                STORE('','Path','SeeMore')
 
-            STORE('','Path','SeeMore')
+                STORE('','MoviesData',data);
 
-            STORE('','MoviesData',data);
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
-
-        })
-
-    })
-
-    CLICKED('#MoreMarathons',()=>{
-
-        const DATA={
-            "Sections":"Marathons",
-            "link":MARATHONAPI,
-        }
-
-        JSONIFICATION(DATA,(data)=>{
-
-            STORE('','Path','SeeMore')
-
-            STORE('','MoviesData',data);
-
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            })
 
         })
 
-    })
+        CLICKED('#MoreMarathons',()=>{
 
-    CLICKED('#MoreSeries',()=>{
+            const DATA={
+                "Sections":"Marathons",
+                "link":MARATHONAPI,
+            }
 
-        const DATA={
-            "Sections":"Series",
-            "link":SERIESAPI,
-        }
+            JSONIFICATION(DATA,(data)=>{
 
-        JSONIFICATION(DATA,(data)=>{
+                STORE('','Path','SeeMore')
 
-            STORE('','Path','SeeMore')
+                STORE('','MoviesData',data);
 
-            STORE('','MoviesData',data);
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
-
-        })
-
-    })
-
-    CLICKED('#MoreAdventure',()=>{
-
-        const DATA={
-            "Sections":"Adventure",
-            "link":ADVENTUREAPI,
-        }
-
-        JSONIFICATION(DATA,(data)=>{
-
-            STORE('','Path','SeeMore')
-
-            STORE('','MoviesData',data);
-
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            })
 
         })
 
-    })
+        CLICKED('#MoreSeries',()=>{
 
+            const DATA={
+                "Sections":"Series",
+                "link":SERIESAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+
+        CLICKED('#MoreAdventure',()=>{
+
+            const DATA={
+                "Sections":"Adventure",
+                "link":ADVENTUREAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+
+        
+        CLICKED('#MoreHorror',()=>{
+
+            const DATA={
+                "Sections":"Horror",
+                "link":HORRORAPI,
+            }
+
+            JSONIFICATION(DATA,(data)=>{
+
+                STORE('','Path','SeeMore')
+
+                STORE('','MoviesData',data);
+
+                EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+
+            })
+
+        })
+        
+
+    })
     
-    CLICKED('#MoreHorror',()=>{
-
-        const DATA={
-            "Sections":"Horror",
-            "link":HORRORAPI,
-        }
-
-        JSONIFICATION(DATA,(data)=>{
-
-            STORE('','Path','SeeMore')
-
-            STORE('','MoviesData',data);
-
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
-
-        })
-
-    })
-
 }
+
 export{HOMEPAGE}
