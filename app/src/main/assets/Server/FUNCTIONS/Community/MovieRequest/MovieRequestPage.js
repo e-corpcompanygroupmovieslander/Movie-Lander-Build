@@ -116,6 +116,8 @@ const MOVIEREQUESTPAGE=()=>{
                                     DISPLAY(ELEMENT,'');
                         
                                     REDUX(data,(element)=>{
+
+                                        DELETEINPUT.value='';
                         
                                         CREATEELEMENT('button','MyDataButton',(button)=>{
                         
