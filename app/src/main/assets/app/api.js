@@ -106,7 +106,7 @@ const UPDATEMESSAGE=`
 
 `;
 
-const HOMEPAGEAPI='../Server/PAGES/HomePage/HomePage.txt';
+const HOMEPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Server/PAGES/HomePage/HomePage.txt';
 
 //Online Updating
 let Onlink='../../Server/CONNECTION/Connection.js';
