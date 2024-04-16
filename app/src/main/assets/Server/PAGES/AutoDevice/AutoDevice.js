@@ -118,9 +118,6 @@ const AUTODEVICE=()=>{
                                     <img class='SeeMoreIcon' src='../library/Assets/icon/arrow.png'/>
                                 
                                 </button>
-
-
-                                <h3>Logout From That Device Above </h3>
                                 
                             </div>
                 
