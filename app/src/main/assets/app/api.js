@@ -89,7 +89,7 @@ const USDYEARLY='100';
 
 //APPVERSION
 const VERSIONSTATUS='Minor';
-const APPVERSION='0.0.3';
+const APPVERSION='0.0.2';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
@@ -109,7 +109,7 @@ const UPDATEMESSAGE=`
 let HOMEPAGEAPI='';
 
 //Online Updating
-let Onlink='';
+let Onlink='../../Server/CONNECTION/Connection.js';
 
 if (localStorage.getItem('Environment') === 'Production' ) {
  

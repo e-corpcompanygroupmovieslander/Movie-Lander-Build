@@ -42,16 +42,6 @@ HOMEPAGE=()=>{
 
     })
 
-    GETPACKAGE(HOMEPAGEAPI,'cors',(data)=>{
-
-        DECLARATION('#HomeDiv',(ELEMENT)=>{
-
-            DISPLAY(ELEMENT,data)
-
-        })
-
-        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-
-    })
+    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }
