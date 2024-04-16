@@ -108,7 +108,6 @@ const UPDATEMESSAGE=`
 
 const HOMEPAGEAPI='../DOCUMENTS/HomePage/HomePage.txt';
 
-
 //Online Updating
 let Onlink='../../Server/CONNECTION/Connection.js';
 

@@ -44,14 +44,16 @@ HOMEPAGE=()=>{
 
         DECLARATION('#HomeDiv',(ELEMENT)=>{
 
-            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-
             DISPLAY(ELEMENT,data)
+
+            console.log(data)
 
         })
 
     })
 
     STORE('','Updates','HomePage');
+
+    //MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }
