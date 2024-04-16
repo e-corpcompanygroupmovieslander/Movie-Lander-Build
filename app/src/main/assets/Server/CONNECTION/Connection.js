@@ -13,8 +13,6 @@ import { LIBRARY } from "../PAGES/libraryPage/LibraryPage.js"
 
 const CONNECTION=()=>{
 
-    REMOVESTORE('','Updates');
-
     AUTODEVICE();
 
     AUTOPREMIUMUSER();
