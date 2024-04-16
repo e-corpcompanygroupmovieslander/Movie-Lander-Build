@@ -25,23 +25,22 @@ extractDataAndSaveToLocalStorage();
 
 DEJSON('local','extractedData',(data)=>{
 
-    // Calculate the expiry date as one day from the PayDate
-    var payDate = new Date(); // Assuming newDate is defined elsewhere
-    var expiryDate = new Date(payDate);
-    expiryDate.setMonth(payDate.getMonth() + 1); // Incrementing the month by 1
-    
-    // Create MYDATA object with corrected values
-    const MYDATA = {
-        "User": data.MyData,
-        "AmountPaid": "MONTHLY",
-        "PaidTo": "MovieLander",
-        "PayeeName":"Movie Lander",
-        "TRANSACTIONID": data.OrderMerchantReference,
-        "PayDate": payDate,
-        "ExpiryDate": expiryDate,
-        "Message":"Monthly Payment Made For"+data.MyData+" on "+ payDate + "under transactionid for" + data.OrderMerchantReference + data.OrderTrackingId+"Paid by "+data.MyData + "expiring on " +expiryDate
-    };
+   // Calculate the expiry date as one year from the PayDate
+   var payDate = new Date(); // Assuming newDate is defined elsewhere
+   var expiryDate = new Date(payDate);
+   expiryDate.setFullYear(payDate.getFullYear() + 1); // Incrementing the year by 1
 
+   // Create MYDATA object with corrected values
+   const MYDATA = {
+       "User": data.MyData,
+       "AmountPaid": "YEARLY",
+       "PaidTo": "MovieLander",
+       "PayeeName":"Movie Lander",
+       "TRANSACTIONID": data.OrderMerchantReference,
+       "PayDate": payDate,
+       "ExpiryDate": expiryDate,
+       "Message":"Yearly Payment Made For"+data.MyData+" on "+ payDate + "under transactionid for" + data.OrderMerchantReference + data.OrderTrackingId+"Paid by "+data.MyData + "expiring on " +expiryDate
+   };
 
     // Output MYDATA object
     console.log(MYDATA);
@@ -63,7 +62,7 @@ DEJSON('local','extractedData',(data)=>{
 
         <h1>SubscriptionPlan</h1>
 
-        <p>Monthly</p>
+        <p>Yearly</p>
 
         <h1>Expires On</h1>
 
