@@ -1,5 +1,7 @@
 HOMEPAGE=()=>{
 
+    STORE('','Updates','HomePage');
+
     REMOVESTORE('','Path');
 
     DISPLAY('',`
@@ -46,12 +48,10 @@ HOMEPAGE=()=>{
 
             DISPLAY(ELEMENT,data)
 
-            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-
         })
 
-    })
+        MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
-    STORE('','Updates','HomePage');
+    })
 
 }
