@@ -48,7 +48,7 @@ const MOVIIEREQUESTAPI=`https://script.google.com/macros/s/AKfycbxSMyblhcQKYRvLs
 
 const MOVIIEREQUESTEDAPI=`https://script.googleusercontent.com/macros/echo?user_content_key=KuQ0_mrBO_3CmTQh5IK8yz7RaG-eVNka0NIVZxLCdH6PvGt9n_FaT6m3ZwWT4iLBU6MCr8AMkQZEdrG-c3iahcubmkTZxa0Gm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEs7UJ0dlvB27hDMA137eagoFAsTqY-HPehJ5_2CaZu1n_yZTcsRd6NJ4kiwA9VyeDiWxKZD0X-nujIekQxU0gNOSwMBEY_a-tz9Jw9Md8uu&lib=MZgXdYXtlqVeWWvMj2IqGu-zilWmV86UI`;
 
-const APPLOCKAPI='https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/DOCUMENTS/HelpPage/HelpPage.txt';
+const APPLOCKAPI='../../DOCUMENTS/AppLock/AppLock.txt';
 
 const LIGHTMODE='#5C829A';
 
