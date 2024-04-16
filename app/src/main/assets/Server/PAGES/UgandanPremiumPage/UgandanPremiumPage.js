@@ -201,7 +201,7 @@ const UGANDANPREMIUMPAGE=()=>{
     
                 LOADER(ELEMENT)
     
-                PESAPAL(`https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/PAGES/PAYMENT%20SYSTEM/WeeklyPesaPal.html?MyData=${localStorage.getItem('User')}`,5000,'UGX',(data)=>{
+                PESAPAL(`https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Pages/PaymentPages/WeeklyPayment/index.html?MyData=${localStorage.getItem('User')}`,5000,'UGX',(data)=>{
     
                     STORE('','Link',data)
     
