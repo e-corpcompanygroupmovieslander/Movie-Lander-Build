@@ -121,7 +121,7 @@ if (localStorage.getItem('Environment') === 'Production' ) {
         
     } else {
 
-        HOMEPAGEAPI='../../Server/PAGES/HomePage/HomePage.txt'
+        HOMEPAGEAPI='../../Server/PAGES/HomePage/HomePage.txt';
     
         Onlink='../../Server/CONNECTION/Connection.js';
           
