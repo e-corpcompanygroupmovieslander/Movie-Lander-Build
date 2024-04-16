@@ -89,7 +89,7 @@ const USDYEARLY='100';
 
 //APPVERSION
 const VERSIONSTATUS='Minor';
-const APPVERSION='0.0.2';
+const APPVERSION='0.0.3';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
@@ -106,7 +106,7 @@ const UPDATEMESSAGE=`
 
 `;
 
-const HOMEPAGEAPI='../DOCUMENTS/HomePage/HomePage.txt';
+const HOMEPAGEAPI='../Server/PAGES/HomePage/HomePage.txt';
 
 //Online Updating
 let Onlink='../../Server/CONNECTION/Connection.js';

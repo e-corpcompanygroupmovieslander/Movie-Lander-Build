@@ -46,14 +46,12 @@ HOMEPAGE=()=>{
 
             DISPLAY(ELEMENT,data)
 
-            console.log(data)
+            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
         })
 
     })
 
     STORE('','Updates','HomePage');
-
-    //MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }
