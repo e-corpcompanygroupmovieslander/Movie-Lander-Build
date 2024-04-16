@@ -72,7 +72,6 @@ DEJSON('local','extractedData',(data)=>{
 
     `)
 
-    
     POSTPACKAGE(MTNPREMIUMPAY,'no-cors',MYDATA,(data)=>{
 
         DISPLAY('',`
@@ -86,12 +85,7 @@ DEJSON('local','extractedData',(data)=>{
         <button>Back To App</button>
         
         `)
-        
-        console.log(data)
-        
-    })
 
-    
-    
+    })
 
 })

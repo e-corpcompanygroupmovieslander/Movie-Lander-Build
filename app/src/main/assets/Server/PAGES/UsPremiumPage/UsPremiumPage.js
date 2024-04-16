@@ -156,7 +156,7 @@ const USPREMIUMPAGE=()=>{
                 
                 LOADER(ELEMENT)
     
-                PESAPAL(`https://e-corpcompanygroupmovieslander.github.io/MovieLanderApp/PAGES/PAYMENT%20SYSTEM/DailyPesaPal.html?MyData=${localStorage.getItem('User')}`,1,'USD',(data)=>{
+                PESAPAL(`https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Pages/PaymentPages/DailyPayment/index.html?MyData=${localStorage.getItem('User')}`,1,'USD',(data)=>{
     
                     STORE('','Link',data)
     
