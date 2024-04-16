@@ -41,9 +41,10 @@
 .DetailsFooter{
     border-radius: 20px 0px;
     top: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     border: 1px solid brown;
-    background: transparent;
+    background: #dcdcdc50;
+
 }
 
 .Bottomdata{
