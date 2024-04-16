@@ -31,7 +31,7 @@ const MOVIESDETAILSPAGE=()=>{
 
                         <h1 class='mytitle'>Rating</h1>
 
-                        <img class='myIcon' src='../library/Assets/icon/trending-topic.png'/>
+                        <img id='RatingIcon' class='myIcon' src='../library/Assets/icon/trending-topic.png'/>
                     
                         <h1 class='MyData'>${data.Rated}/10</h1>
 
