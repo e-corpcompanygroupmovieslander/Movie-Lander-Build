@@ -1,0 +1,8 @@
+.Payment{
+    position: absolute;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: transparent;
+}
+
