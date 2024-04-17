@@ -14,24 +14,54 @@ const PAYMENTPAGE = () => {
     
         <div id='DataDiv' class='ScrollView'>
 
-            <img id='HomeLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            <h1>Please Read</h1>
 
-            <iframe id='PaymentFrame' class='Payment' src='${sessionStorage.getItem('Link')}'></iframe>
-        
+            <p>
+            After You Have Made Payments 
+
+            <br><br>
+            Please be patient Until This Page Below Appears .
+            <br><br>
+            Thank You.
+            <br><br>
+            Movie Lander Team
+
+            </p>
+
+            <div id='PaymentImgeDiv' class='View'>
+
+            <img class='LatestImage' src='../library/Assets/images/PaymentImages/paymentimage.png'/>
+            
+            </div>
+
+            <button id='LogOut' class='Continue'>Pay</button>
+
         </div>
     `);
 
-    DECLARATION('.Payment', (ELEMENT) => {
-        // Access data from local storage
-        var localStorageData = localStorage.getItem('UserData');
+    CLICKED('.Continue',()=>{
 
-        // Pass data to the iframe
-        ELEMENT.onload = function() {
-            ELEMENT.contentWindow.postMessage(localStorageData, '*');
-            // Once loaded, remove the loading message
-            document.getElementById('HomeLoader').style.display = 'none';
-        };
-    });
+        DECLARATION('#DataDiv',(ELEMENT)=>{
+            DISPLAY(ELEMENT,`
+                <iframe id='PaymentFrame' class='Payment' src='${sessionStorage.getItem('Link')}'></iframe>
+                <img id='HomeLoader' class='LoadingIcon' src='../library/Assets/icon/loading.png'/>
+            
+            `)
+        })
+
+        DECLARATION('.Payment', (ELEMENT) => {
+            // Access data from local storage
+            var localStorageData = localStorage.getItem('UserData');
+    
+            // Pass data to the iframe
+            ELEMENT.onload = function() {
+                ELEMENT.contentWindow.postMessage(localStorageData, '*');
+                // Once loaded, remove the loading message
+                document.getElementById('HomeLoader').style.display = 'none';
+            };
+        });
+
+    })
 
     DECLARATION('.BackIcon', (ELEMENT) => {
         EVENT(ELEMENT, 'click', () => {
@@ -42,3 +72,4 @@ const PAYMENTPAGE = () => {
 };
 
 export { PAYMENTPAGE };
+
