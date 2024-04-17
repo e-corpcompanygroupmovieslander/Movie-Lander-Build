@@ -14,3 +14,4 @@ const MOVIEDETAILSPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movi
 const MOVIESDATAPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesdataPage/MoviesDataPage.js';
 const AUTODEVICEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDevice/AutoDevice.js';
 const AUTODELETEACCOUNTAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDeleteAccount/AutoDeleteAccount.js';
+const AUTOPREMIUMUSERAPI=`../project/PremiumAccountChecker/PremiumAccountChecker.js`;
