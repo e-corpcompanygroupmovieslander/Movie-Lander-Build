@@ -101,23 +101,28 @@ SETTINGSPAGE=()=>{
 
     CLICKED('#AppVersion',()=>{
 
-        CONDITION(APPVERSION === CURRENTVERSION ,
+        CONDITION(APPVERSION === CURRENTVERSION   ,
 
             ()=>MESSAGE('No Updates Available'),
 
-            ()=>CONFIRMBOX(`Movie Lander ${APPVERSION} <br><br> Update To The Latest Version`,(data)=>{
+            ()=>CONDITION(APPVERSION < CURRENTVERSION,
 
-                CONDITION(data === true,
+                ()=>MESSAGE('No Updates Available'),
 
-                    ()=>WEBSITE(UPDATEAPI),
+                ()=>CONFIRMBOX(`Movie Lander ${APPVERSION} <br><br> Update To The Latest Version`,(data)=>{
 
-                    ()=>console.log('Waiting For Major Update')
-                
-                )
+                    CONDITION(data === true,
+    
+                        ()=>WEBSITE(UPDATEAPI),
+    
+                        ()=>console.log('Waiting For Major Update')
+                    
+                    )
+    
+                }),
+            
+            )
 
-                console.log(data)
-            }),
-        
         )
 
     })
