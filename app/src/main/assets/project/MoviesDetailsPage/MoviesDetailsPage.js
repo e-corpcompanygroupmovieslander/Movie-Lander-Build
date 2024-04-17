@@ -88,11 +88,11 @@ MOVIESDETAILSPAGE=()=>{
 
         CLICKED('#BackIcon',()=>{
 
-            CONDITION(sessionStorage.getItem('Updates') === 'HomePage',
+            CONDITION(sessionStorage.getItem('Path') === 'HomePage',
 
             ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
 
-            ()=>CONDITION(sessionStorage.getItem('Updates') === 'CatergoriesPage',
+            ()=>CONDITION(sessionStorage.getItem('Path') === 'CatergoriesPage',
 
                 ()=>EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()}),
 

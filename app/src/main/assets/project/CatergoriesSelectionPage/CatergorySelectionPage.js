@@ -49,6 +49,8 @@ CATERGORIESSELECTIONPAGE=()=>{
                         `);
     
                         EVENT(MOVIESHOLDER,'click',()=>{
+
+                            STORE('','Path','CatergoriesPage');
     
                             STORE('','MovieData',JSON.stringify(element));
     
