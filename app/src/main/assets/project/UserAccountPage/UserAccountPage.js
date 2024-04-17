@@ -1,7 +1,5 @@
 USERACCOUNTPAGE=()=>{
 
-    STORE('','Updates','PremiumPage');
-
     DEJSON('local','UserData',(data)=>{
 
         DISPLAY('',`
@@ -156,9 +154,7 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#Premium',()=>{
 
-            STORE('','PremiumPath','PremiumPage');
-
-            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()});
+            EXTERNALJS(PREMIUMPAGEAPI,()=>{PREMIUMPAGE()});
 
         })
 

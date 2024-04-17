@@ -1,6 +1,4 @@
-import { PREMIUMPAGE } from "./PremiumPage.js";
-
-const PAYMENTPAGE = () => {
+PAYMENTPAGE = () => {
 
     DISPLAY('', `
     

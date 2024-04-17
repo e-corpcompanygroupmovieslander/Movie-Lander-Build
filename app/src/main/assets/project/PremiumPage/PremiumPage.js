@@ -1,19 +1,15 @@
-import { UGANDANPREMIUMPAGE } from "../UgandanPremiumPage/UgandanPremiumPage.js"
-import { USPREMIUMPAGE } from "../UsPremiumPage/UsPremiumPage.js"
-
-const PREMIUMPAGE=()=>{
+PREMIUMPAGE=()=>{
 
     DEJSON('local','UserData',(data)=>{
 
         CONDITION( data.Location === 'Uganda',
 
-        ()=>UGANDANPREMIUMPAGE(),
+        ()=>EXTERNALJS(UGANDANPREMIUMPAGEAPI,()=>{UGANDANPREMIUMPAGE()}),
 
-        ()=>USPREMIUMPAGE()
+        ()=>EXTERNALJS(USPREMIUMPAGEAPI,()=>{USPREMIUMPAGE()})
     
         )
 
     })
 
 }
-export{PREMIUMPAGE}
