@@ -14,6 +14,8 @@ const PAYMENTPAGE = () => {
     
         <div id='DataDiv' class='ScrollView'>
 
+            <img class='AppLogo' src='../library/Assets/icon/caution.png'/>
+
             <h1>Please Read</h1>
 
             <p>
