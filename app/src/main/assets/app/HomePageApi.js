@@ -12,4 +12,5 @@ const HOMEHORRORAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Land
 const LATESTROMANCEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js';
 const MOVIEDETAILSPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesDetailsPage/MoviesDetailsPage.js';
 const MOVIESDATAPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesdataPage/MoviesDataPage.js';
-const AUTODEVICEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDevice/AutoDevice.js'
+const AUTODEVICEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDevice/AutoDevice.js';
+const AUTODELETEACCOUNTAPI='../project/AutoDeleteAccount/AutoDeleteAccount.js';
