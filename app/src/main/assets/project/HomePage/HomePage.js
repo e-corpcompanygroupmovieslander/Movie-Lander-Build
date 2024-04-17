@@ -1,7 +1,5 @@
 HOMEPAGE=()=>{
 
-    STORE('','Updates','HomePage');
-
     REMOVESTORE('','Path');
 
     DISPLAY('',`
@@ -42,6 +40,15 @@ HOMEPAGE=()=>{
 
     })
 
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+    GETPACKAGE(HOMEMOVIESPAGEAPI,'cors',(data)=>{
+        DECLARATION('#HomeDiv',(ELEMENT)=>{
+
+            DISPLAY(ELEMENT,data);
+            
+            EXTERNALJS(HOMEPAGECONNECTIONAPI,()=>{HOMEPAGECONNECTION()})
+
+        })
+
+    })
 
 }
