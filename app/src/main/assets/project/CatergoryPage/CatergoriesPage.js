@@ -44,7 +44,7 @@ CATERGORIESPAGE=()=>{
 
                     EVENT(MOVIESHOLDER,'click',()=>{
 
-                        REMOVESTORE('','Path');
+                        STORE('','Path','CatergoriesPage');
 
                         STORE('','MoviesData',JSON.stringify(element));
 

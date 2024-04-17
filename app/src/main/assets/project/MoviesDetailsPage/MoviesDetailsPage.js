@@ -92,13 +92,7 @@ MOVIESDETAILSPAGE=()=>{
 
             ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
 
-            ()=>CONDITION(sessionStorage.getItem('Path') === 'CatergoriesPage',
-
-                ()=>EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()}),
-
-                ()=>EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
-
-            )
+            ()=>EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()})
 
         )
             
