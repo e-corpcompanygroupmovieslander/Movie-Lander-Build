@@ -30,7 +30,7 @@ const PAYMENTPAGE = () => {
 
             <div id='PaymentImgeDiv' class='View'>
 
-            <img class='LatestImage' src='../library/Assets/images/PaymentImages/paymentimage.png'/>
+            <img class='LatestImage' src='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/library/Assets/images/PaymentImages/paymentimage.png'/>
             
             </div>
 
