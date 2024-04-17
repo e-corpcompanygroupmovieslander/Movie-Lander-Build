@@ -96,7 +96,7 @@ MOVIESDETAILSPAGE=()=>{
 
                 ()=>EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()}),
 
-                ()=>MOVIESDETAILSPAGE()
+                ()=>EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
 
             )
 
@@ -108,7 +108,7 @@ MOVIESDETAILSPAGE=()=>{
 
             STORE('','PremiumPath','PremiumPage');
         
-            MOVIESDATAPAGE();
+            EXTERNALJS(MOVIESDATAPAGEAPI,()=>{MOVIESDATAPAGE()});
 
         })
 
