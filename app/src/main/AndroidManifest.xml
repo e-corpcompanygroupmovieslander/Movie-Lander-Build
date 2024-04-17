@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Internet Permissions -->
@@ -8,45 +7,33 @@
     <!-- Vibration Permissions -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
-     <!-- Contacts permissions -->
+    <!-- Contacts permissions -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-
         android:label="@string/app_name"
-
         android:icon="@drawable/app_icon"
-
         android:theme="@style/AppTheme">
 
         <activity
-
             android:name=".MainActivity"
-            
             android:exported="true">
 
+            <!-- Launcher Intent Filter -->
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
 
+            <!-- Deep Link Intent Filter -->
             <intent-filter>
-
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="http" />
-
-                <data android:scheme="https" />
-
-                <data android:host="*" />
-
+                <!-- Define the scheme, host, and path for your deep link -->
+                <data android:scheme="http" android:host="e-corpcompanygroupmovieslander.github.io" android:path="/Movie-Lander-Build/app/src/main/assets/app/index.html" />
+                <data android:scheme="https" android:host="e-corpcompanygroupmovieslander.github.io" android:path="/Movie-Lander-Build/app/src/main/assets/app/index.html" />
             </intent-filter>
 
         </activity>
