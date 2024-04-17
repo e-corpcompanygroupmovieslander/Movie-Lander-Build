@@ -1,4 +1,4 @@
-const HOMEMOVIESPAGEAPI='../project/HomePage/HomePage.txt';
+const HOMEMOVIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePage.txt';
 const HOMEPAGECONNECTIONAPI='../project/HomePage/HomePageConnection.js';
 const LATESTANIMATIONAPI='../project/HomePage/HomePageMovies/latestAmination/latestAnimation.js';
 const HOMEANIMATIONAPI='../project/HomePage/HomePageMovies/HomeAnimation/HomeAnimations.js';
@@ -9,4 +9,4 @@ const HOMESERIESAPI='../project/HomePage/HomePageMovies/HomeSeries/HomeSeries.js
 const LATESTNIGERIANAPI='../project/HomePage/HomePageMovies/LatestNigerian/LatestNigerian.js';
 const HOMEADVENTUREAPI='../project/HomePage/HomePageMovies/HomeAdventure/HomeAdventure.js';
 const HOMEHORRORAPI='../project/HomePage/HomePageMovies/HomeHorror/HomeHorror.js';
-const LATESTROMANCEAPI='../project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js'
+const LATESTROMANCEAPI='../project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js';
