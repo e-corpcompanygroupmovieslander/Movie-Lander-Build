@@ -140,8 +140,7 @@ const AUTODEVICE=()=>{
                                     ()=>DECLARATION('#oldaccount',(ELEMENT)=>{
 
                                         LOADER(ELEMENT);
-
-                                        
+                                     
                                         const DEVICEDATA={
 
                                             "User":localStorage.getItem('User'),

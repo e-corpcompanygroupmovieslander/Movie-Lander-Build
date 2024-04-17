@@ -1,10 +1,12 @@
+import { MYPREMIUMACCOUNT } from "../MyPremiumAccount/MyPremiumAccount.js"
+
 const USERSETTINGSACCOUNTPAGEPREMIUM=()=>{
 
     DECLARATION('#DataDiv',(ELEMENT)=>{
 
         DISPLAY(ELEMENT,`
 
-            <button id='AppLock' class='Button'>
+            <button id='MyPremiumAccount' class='Button'>
 
                 <h1 class='Buttontitle'>My Premium Account</h1>
 
@@ -36,9 +38,6 @@ const USERSETTINGSACCOUNTPAGEPREMIUM=()=>{
             
             </button>
 
-        
-        
-        
         
         `)
 
