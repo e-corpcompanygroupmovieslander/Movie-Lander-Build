@@ -24,7 +24,7 @@ HOMEANIMATION=()=>{
 
                             STORE('','MovieData',JSON.stringify(element));
 
-                            MOVIESDETAILSPAGE()
+                            EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
                            
                         })
 

@@ -49,12 +49,11 @@ CATERGORIESSELECTIONPAGE=()=>{
                         `);
     
                         EVENT(MOVIESHOLDER,'click',()=>{
-
-                            STORE('','Updates','CatergoriesPage');
     
                             STORE('','MovieData',JSON.stringify(element));
     
-                            MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
+                            EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
+                            
                         })
     
                         ADD(ELEMENT,MOVIESHOLDER);
