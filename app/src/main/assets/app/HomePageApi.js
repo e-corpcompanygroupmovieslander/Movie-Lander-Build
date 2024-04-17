@@ -13,4 +13,4 @@ const LATESTROMANCEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-L
 const MOVIEDETAILSPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesDetailsPage/MoviesDetailsPage.js';
 const MOVIESDATAPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesdataPage/MoviesDataPage.js';
 const AUTODEVICEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDevice/AutoDevice.js';
-const AUTODELETEACCOUNTAPI='../project/AutoDeleteAccount/AutoDeleteAccount.js';
+const AUTODELETEACCOUNTAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/AutoDeleteAccount/AutoDeleteAccount.js';
