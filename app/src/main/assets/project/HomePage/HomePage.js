@@ -49,4 +49,6 @@ HOMEPAGE=()=>{
 
     })
 
+    EXTERNALJS(AUTODEVICEAPI,()=>{AUTODEVICE()})
+
 }
