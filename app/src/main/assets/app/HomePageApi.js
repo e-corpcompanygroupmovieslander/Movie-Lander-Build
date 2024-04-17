@@ -11,4 +11,4 @@ const HOMEADVENTUREAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-L
 const HOMEHORRORAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeHorror/HomeHorror.js';
 const LATESTROMANCEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js';
 const MOVIEDETAILSPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesDetailsPage/MoviesDetailsPage.js';
-const MOVIESDATAPAGEAPI='../project/MoviesdataPage/MoviesDataPage.js';
+const MOVIESDATAPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesdataPage/MoviesDataPage.js';
