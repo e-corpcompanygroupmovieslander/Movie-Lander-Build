@@ -88,8 +88,8 @@ const USDMONTHLY='20';
 const USDYEARLY='100';
 
 //APPVERSION
-const VERSIONSTATUS='Minor';
 const APPVERSION='0.0.3';
+const VERSIONSTATUS='Minor';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
