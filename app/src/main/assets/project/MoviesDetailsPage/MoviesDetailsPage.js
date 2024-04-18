@@ -101,16 +101,12 @@ MOVIESDETAILSPAGE=()=>{
         })
 
         CLICKED('#Moviedata',()=>{
-
-            STORE('','PremiumPath','PremiumPage');
         
             EXTERNALJS(MOVIESDATAPAGEAPI,()=>{MOVIESDATAPAGE()});
 
         })
 
         CLICKED('.Watch',()=>{
-
-            STORE('','PremiumPath','MoviePage');
 
             CONDITION(data.Subscription && localStorage.getItem('Premium') ,
 
