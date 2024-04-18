@@ -22,7 +22,7 @@ HOMEPAGE=()=>{
 
     CLICKED('#Catergories',()=>{
 
-        EXTERNALJS('../project/CatergoryPage/CatergoriesPage.js',()=>{CATERGORIESPAGE()})
+        EXTERNALJS(CATERGORIESPAGEAPI,()=>{CATERGORIESPAGE()})
 
     })
 

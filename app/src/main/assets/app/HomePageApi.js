@@ -19,3 +19,4 @@ const PREMIUMPAGEAPI=`https://e-corpcompanygroupmovieslander.github.io/Movie-Lan
 const UGANDANPREMIUMPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/UgandanPremiumPage/UgandanPremiumPage.js';
 const USPREMIUMPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/UsPremiumPage/UsPremiumPage.js';
 const PAYMENTPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/PremiumPage/PaymentPage.js';
+const CATERGORIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/CatergoryPage/CatergoriesPage.js';
