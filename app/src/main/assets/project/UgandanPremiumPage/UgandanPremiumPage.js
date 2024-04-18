@@ -109,15 +109,15 @@ UGANDANPREMIUMPAGE=()=>{
 
         CLICKED('#BackIcon',()=>{
 
-            CONDITION(sessionStorage.getItem('Path') === 'PremiumPage',
+            CONDITION(sessionStorage.getItem('PremiumPath') === 'Direct',
 
                 ()=>EXTERNALJS('../project/UserAccountPage/UserAccountPage.js',()=>{USERACCOUNTPAGE()}),
 
-                ()=>CONDITION(sessionStorage.getItem('Path') === 'MyAccount',
+                ()=>CONDITION(sessionStorage.getItem('PremiumPath') === 'MyAccount',
 
                     ()=>EXTERNALJS('../project/UserAccountSettings/UserAccountSettings.js',()=>{USERSETTINGSACCOUNTPAGE()}),
 
-                    ()=>EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()});
+                    ()=>EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
 
                 )
 

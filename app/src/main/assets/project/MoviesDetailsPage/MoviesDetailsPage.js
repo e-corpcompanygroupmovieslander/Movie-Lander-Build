@@ -1,5 +1,7 @@
 MOVIESDETAILSPAGE=()=>{
 
+    REMOVESTORE('','PremiumPath')
+
     DEJSON('','MovieData',(data)=>{
 
         DISPLAY('',`

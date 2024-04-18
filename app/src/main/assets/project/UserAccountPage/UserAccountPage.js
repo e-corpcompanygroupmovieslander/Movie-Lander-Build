@@ -154,6 +154,8 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#Premium',()=>{
 
+            STORE('','PremiumPath','Direct');
+
             EXTERNALJS(PREMIUMPAGEAPI,()=>{PREMIUMPAGE()});
 
         })
