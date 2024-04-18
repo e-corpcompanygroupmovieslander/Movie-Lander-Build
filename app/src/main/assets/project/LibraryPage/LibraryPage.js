@@ -24,8 +24,5 @@ LIBARYPAGE=()=>{
 
     })
 
-    STORE('','Updates','LibraryPage')
-
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }
