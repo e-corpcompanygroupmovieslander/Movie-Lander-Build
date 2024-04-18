@@ -204,7 +204,7 @@ UGANDANPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         
@@ -249,7 +249,7 @@ UGANDANPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         
@@ -295,7 +295,7 @@ UGANDANPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         

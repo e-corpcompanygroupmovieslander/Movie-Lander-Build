@@ -117,7 +117,7 @@ USPREMIUMPAGE=()=>{
 
                     ()=>EXTERNALJS('../project/UserAccountSettings/UserAccountSettings.js',()=>{USERSETTINGSACCOUNTPAGE()}),
 
-                    ()=>MOVIESDETAILSPAGE()
+                    ()=>EXTERNALJS(MOVIEDETAILSPAGEAPI,()=>{MOVIESDETAILSPAGE()})
 
                 )
 
@@ -159,7 +159,7 @@ USPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()})
     
                     } else {
                         
@@ -204,7 +204,7 @@ USPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         
@@ -249,7 +249,7 @@ USPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         
@@ -295,7 +295,7 @@ USPREMIUMPAGE=()=>{
     
                     if (sessionStorage.getItem('Link')) {
                         
-                        PAYMENTPAGE();
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()});
     
                     } else {
                         
