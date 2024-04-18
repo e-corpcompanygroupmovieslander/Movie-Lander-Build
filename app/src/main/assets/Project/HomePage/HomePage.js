@@ -28,7 +28,7 @@ HOMEPAGE=()=>{
 
     CLICKED('#FreeMovies',()=>{
 
-        EXTERNALJS('../project/FreeMoviesPage/FreeMoviesPage.js',()=>{FREEMOVIESPAGE()})
+        EXTERNALJS(FREEMOVIESPAI,()=>{FREEMOVIESPAGE()})
 
     })
 

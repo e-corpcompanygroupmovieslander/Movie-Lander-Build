@@ -20,3 +20,5 @@ const UGANDANPREMIUMPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Mo
 const USPREMIUMPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/UsPremiumPage/UsPremiumPage.js';
 const PAYMENTPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/PremiumPage/PaymentPage.js';
 const CATERGORIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/CatergoryPage/CatergoriesPage.js';
+const FREEMOVIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/FreeMoviesPage/FreeMoviesWatchPage.js';
+const FREEMOVIESPAI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/FreeMoviesPage/FreeMoviesPage.js'

@@ -16,7 +16,7 @@ FREEMOVIESWATCHPAGE=()=>{
 
         CLICKED('#BackIcon',()=>{
 
-            EXTERNALJS('../project/FreeMoviesPage/FreeMoviesPage.js',()=>{FREEMOVIESPAGE()})
+            EXTERNALJS(FREEMOVIESPAGEAPI,()=>{FREEMOVIESPAGE()})
 
         })
 

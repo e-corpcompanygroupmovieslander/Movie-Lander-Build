@@ -44,7 +44,7 @@ FREEMOVIESPAGE=()=>{
 
                         STORE('','MovieData',JSON.stringify(element));
 
-                        EXTERNALJS('../project/FreeMoviesPage/FreeMoviesWatchPage.js',()=>{FREEMOVIESWATCHPAGE()});
+                        EXTERNALJS(FREEMOVIESPAGEAPI,()=>{FREEMOVIESWATCHPAGE()});
 
                     })
 
