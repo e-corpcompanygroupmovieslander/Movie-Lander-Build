@@ -7,7 +7,7 @@ const APPSTART=()=>{
 
     CONDITION(navigator.onLine,
 
-        ()=>MODULE('../Project/Connection/Connection.js','CONNECTION',(CONNECTION)=>{CONNECTION()}),
+        ()=>MODULE('https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/Connection/Connection.js','CONNECTION',(CONNECTION)=>{CONNECTION()}),
     
         ()=>CHECK('',(result)=>{
 
