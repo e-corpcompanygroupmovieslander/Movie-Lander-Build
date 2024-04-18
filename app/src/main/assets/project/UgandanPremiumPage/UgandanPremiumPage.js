@@ -158,9 +158,9 @@ UGANDANPREMIUMPAGE=()=>{
                     STORE('','Link',data)
     
                     if (sessionStorage.getItem('Link')) {
-                        
-                        PAYMENTPAGE();
-    
+
+                        EXTERNALJS(PAYMENTPAGEAPI,()=>{PAYMENTPAGE()})
+
                     } else {
                         
                         MESSAGE('Something Went Wrong ');

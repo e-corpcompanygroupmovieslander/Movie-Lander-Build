@@ -18,3 +18,4 @@ const AUTOPREMIUMUSERAPI=`https://e-corpcompanygroupmovieslander.github.io/Movie
 const PREMIUMPAGEAPI=`../project/PremiumPage/PremiumPage.js`;
 const UGANDANPREMIUMPAGEAPI='../project/UgandanPremiumPage/UgandanPremiumPage.js';
 const USPREMIUMPAGEAPI='../project/UsPremiumPage/UsPremiumPage.js';
+const PAYMENTPAGEAPI='../project/PremiumPage/PaymentPage.js';

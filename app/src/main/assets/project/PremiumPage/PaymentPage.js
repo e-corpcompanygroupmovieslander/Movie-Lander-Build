@@ -71,5 +71,4 @@ PAYMENTPAGE = () => {
     });
 };
 
-export { PAYMENTPAGE };
 
