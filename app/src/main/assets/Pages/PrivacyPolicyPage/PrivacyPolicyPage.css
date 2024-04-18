@@ -1,0 +1,20 @@
+body{
+    background: #5C829A;
+}
+#Section{
+    color: white;
+}
+
+#PolicyDataDiv{
+    background: transparent ;
+    top: 52px;
+    bottom: 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+#AppimageSection{
+    position: relative;
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}

@@ -1,0 +1,13 @@
+.Devices{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+#UpdateButton{
+    background: red;
+}
+
+#oldaccount{
+    background: #00800080;
+}

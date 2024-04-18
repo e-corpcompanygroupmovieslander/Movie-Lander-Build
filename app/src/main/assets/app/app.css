@@ -1,10 +1,20 @@
-.AppLogo{
-    width: 30%;
-    border-radius: 20px;
-    margin: 10% 35% ;
+.VersionName{
+    font-size: 20px;
 }
 
-.OfflineImage{
-    width: 10%;
-    margin: 5% 45% ;
+.VersionMessage{
+    position: relative;
+    background: transparent;
+    height: 55%;
+    width: 95%;
+    left: 2%;
+    border-radius: 0px;
+    border-bottom: 1px solid brown;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 1rem;
+    border-top: 1px solid brown;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }

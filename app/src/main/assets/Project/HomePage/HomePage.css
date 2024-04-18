@@ -1,0 +1,17 @@
+@import url('https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomeConnection.css');
+.HomeFooter{
+    width: 95%;
+    left: 2%;
+    margin-bottom: 0.5rem;
+    border-radius: 50px;
+}
+
+.ScrollView{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+#HomeLoader{
+    margin: 90% 45%;
+}
