@@ -1,5 +1,0 @@
-const LIBRARY=()=>{
-
-}
-
-export{LIBRARY}

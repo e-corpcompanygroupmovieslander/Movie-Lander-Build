@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
         WebViewInitializer.initializeWebView(this, webView);
         webView.setWebViewClient(new WebViewClientImpl());
         webView.setWebChromeClient(new WebChromeClientImpl());
-        webView.loadUrl("file:///android_asset/app/index.html");
+        webView.loadUrl("file:///android_asset/App/index.html");
         webView.addJavascriptInterface(new WebAppInterface(this), "Android");
     }
 

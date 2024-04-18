@@ -1,1 +1,0 @@
-const  CURRENTVERSION='0.0.3';
