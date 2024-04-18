@@ -1,6 +1,6 @@
 const HOMEMOVIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/HomePage/HomePage.txt';
-const HOMEPAGECONNECTIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageConnection.js';
-const LATESTANIMATIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/latestAmination/latestAnimation.js';
+const HOMEPAGECONNECTIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/HomePage/HomePageConnection.js';
+const LATESTANIMATIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/HomePage/HomePageMovies/latestAmination/latestAnimation.js';
 const HOMEANIMATIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeAnimation/HomeAnimations.js';
 const HOMEMOVIESAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeMovies/HomeMovies.js';
 const LATESTMOVIESAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/LatestMovies/LatestMovies.js';
@@ -9,7 +9,7 @@ const HOMESERIESAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Land
 const LATESTNIGERIANAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/LatestNigerian/LatestNigerian.js';
 const HOMEADVENTUREAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeAdventure/HomeAdventure.js';
 const HOMEHORRORAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeHorror/HomeHorror.js';
-const LATESTROMANCEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js';
+const LATESTROMANCEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/HomePage/HomePageMovies/LatestRomance/LatestRomance.js';
 const MOVIEDETAILSPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesDetailsPage/MoviesDetailsPage.js';
 const MOVIESDATAPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/MoviesdataPage/MoviesDataPage.js';
 const AUTODEVICEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/AutoDevice/AutoDevice.js';
