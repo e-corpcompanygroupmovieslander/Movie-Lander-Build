@@ -37,7 +37,7 @@ if (localStorage.getItem('Environment') === 'Production') {
 
 const APPSTART = () => {
 
-    CONDITION( VERSIONSTATUS === 'Minor' && APPVERSION > CURRENTVERSION || APPVERSION === CURRENTVERSION  ,
+    CONDITION( VERSIONSTATUS === 'Minor',
 
     () => CONDITION(localStorage.getItem('AppLock'),
 
