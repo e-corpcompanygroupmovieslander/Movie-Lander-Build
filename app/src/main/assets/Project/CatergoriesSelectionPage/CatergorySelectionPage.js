@@ -26,7 +26,7 @@ CATERGORIESSELECTIONPAGE=()=>{
 
             ()=>EXTERNALJS('../project/HomePage/HomePage.js',()=>{HOMEPAGE()}),
 
-            ()=>EXTERNALJS('../project/CatergoryPage/CatergoriesPage.js',()=>{CATERGORIESPAGE()})
+            ()=>EXTERNALJS(CATERGORIESPAGEAPI,()=>{CATERGORIESPAGE()})
         
             )
     

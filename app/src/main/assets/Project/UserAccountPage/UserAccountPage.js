@@ -111,13 +111,13 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#UserSettingsAccount',()=>{
 
-            EXTERNALJS('../project/UserAccountSettings/UserAccountSettings.js',()=>{USERSETTINGSACCOUNTPAGE()})
+            EXTERNALJS(USERSETTINGSACCOUNTPAGEAPI,()=>{USERSETTINGSACCOUNTPAGE()})
 
         })
 
         CLICKED('#Community',()=>{
 
-            EXTERNALJS('../project/CommunityPage/CommunityPage.js',()=>{COMMUNITYPAGE()});
+            EXTERNALJS(COMMUNITYPAGEAPI,()=>{COMMUNITYPAGE()});
 
         })
 
@@ -142,7 +142,7 @@ USERACCOUNTPAGE=()=>{
         
         CLICKED('#Business',()=>{
 
-            EXTERNALJS('../project/BusinessToolsPage/BusinessToolsPage.js',()=>{BUSINESSTOOLSPAGE()});
+            EXTERNALJS(BUSINESSTOOLSPAGEAPI,()=>{BUSINESSTOOLSPAGE()});
 
         })
 
@@ -167,13 +167,13 @@ USERACCOUNTPAGE=()=>{
 
         CLICKED('#Notifications',()=>{
 
-            EXTERNALJS('../project/NotificationsPage/NotificationsPage.js',()=>{NOTIFICATIONSPAGE()});
+            EXTERNALJS(NOTIFICATIONSPAGEAPI,()=>{NOTIFICATIONSPAGE()});
 
         })
 
         CLICKED('#LibraryPage',()=>{
 
-            EXTERNALJS('../project/LibraryPage/LibraryPage.js',()=>{LIBARYPAGE()});
+            EXTERNALJS(LIBRARYPAGEAPI,()=>{LIBARYPAGE()});
 
         })
 

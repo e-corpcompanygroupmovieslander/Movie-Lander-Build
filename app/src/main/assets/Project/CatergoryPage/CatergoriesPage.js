@@ -48,7 +48,7 @@ CATERGORIESPAGE=()=>{
 
                         STORE('','MoviesData',JSON.stringify(element));
 
-                        EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+                        EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
                     })
 

@@ -25,7 +25,7 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
         })
 
@@ -44,7 +44,7 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
         })
 
@@ -63,7 +63,7 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
         })
 
@@ -82,7 +82,7 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
         })
 
@@ -101,7 +101,7 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
 
         })
 
@@ -120,7 +120,8 @@ HOMEPAGECONNECTION=()=>{
 
             STORE('','MoviesData',data);
 
-            EXTERNALJS('../project/CatergoriesSelectionPage/CatergorySelectionPage.js',()=>{CATERGORIESSELECTIONPAGE()});
+            EXTERNALJS(CATERGORIESSELECTIONPAGEAPI,()=>{CATERGORIESSELECTIONPAGE()});
+            
 
         })
 
