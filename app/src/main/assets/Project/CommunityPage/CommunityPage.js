@@ -50,8 +50,5 @@ COMMUNITYPAGE=()=>{
 
     })
 
-    STORE('','Updates','CommunityPage')
-
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
 
 }

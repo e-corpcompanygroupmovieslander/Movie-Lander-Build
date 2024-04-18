@@ -24,8 +24,4 @@ NOTIFICATIONSPAGE=()=>{
 
     })
 
-    STORE('','Updates','NotificationsPage')
-
-    MODULE(`${Onlink}`,'CONNECTION',(CONNECTION)=>{CONNECTION()})
-
 }
