@@ -1,4 +1,4 @@
-const HOMEMOVIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePage.txt';
+const HOMEMOVIESPAGEAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/Project/HomePage/HomePage.txt';
 const HOMEPAGECONNECTIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageConnection.js';
 const LATESTANIMATIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/latestAmination/latestAnimation.js';
 const HOMEANIMATIONAPI='https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-Build/app/src/main/assets/project/HomePage/HomePageMovies/HomeAnimation/HomeAnimations.js';
