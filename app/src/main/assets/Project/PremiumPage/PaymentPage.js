@@ -66,7 +66,7 @@ PAYMENTPAGE = () => {
     DECLARATION('.BackIcon', (ELEMENT) => {
         EVENT(ELEMENT, 'click', () => {
             REMOVESTORE('', 'Link');
-            PREMIUMPAGE();
+            EXTERNALJS(PREMIUMPAGEAPI,()=>{PREMIUMPAGE()});
         });
     });
 };
