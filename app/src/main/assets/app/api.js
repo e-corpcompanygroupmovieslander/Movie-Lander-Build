@@ -88,8 +88,8 @@ const USDMONTHLY='20';
 const USDYEARLY='100';
 
 //APPVERSION
-const APPVERSION='0.0.3';
-const VERSIONSTATUS='Minor';
+const VERSIONSTATUS='';
+const APPVERSION='0.0.4';
 const UPDATEMESSAGE=`
 
     <h1>Movie Lander ${APPVERSION}</h1>
@@ -101,6 +101,14 @@ const UPDATEMESSAGE=`
     <br><br>
 
     Introductions To AppLocks Features and Its Usage Policy
+
+    <br><br>
+    
+    App Sync 
+
+    <br><br>
+
+    Device Data Upload Speed
 
     </p>
 
